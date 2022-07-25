@@ -1,0 +1,131 @@
+#content {
+  article {
+    .title-page {
+      color: #20789E;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
+  .content-container {
+    .content {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+body {
+  margin-top: 40px;
+}
+
+#sidebar-posts-popular {
+  padding-top: 20px;
+
+  ul {
+    list-style: none;
+  }
+  li {
+    list-style: none;
+  }
+  h5 {
+    margin: 0;
+  }
+  h3 {
+    color: #2996bd;
+    margin: 10px 0px 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-left: 5px solid #32aae1;
+    font-size: 26px;
+  }
+  .sidebar.widget {
+    background: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    ul {
+      margin: 0px;
+      padding: 0;
+      overflow: hidden;
+      li {
+        overflow: hidden;
+        font-size: 14px;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed #ddd;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .sidebar-thumb {
+    float: left;
+    overflow: hidden;
+    margin-right: 15px;
+    img {
+      background: #fff;
+      border: 1px dashed #e0e0e0;
+      padding: 6px;
+      height: 75px;
+      width: 75px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+
+    }
+  }
+  .sidebar-content {
+    h5 {
+      font-size: 16px;
+      cursor: pointer;
+      line-height: 24px;
+      a {
+        &:hover {
+          color: #2996bd;
+        }
+        color: #202020;
+        outline: 0 none;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+      }
+    }
+  }
+  .sidebar-meta {
+    margin-top: 10px;
+    span {
+      color: #2e2e2e;
+      i {
+        color: #2996bd;
+      }
+    }
+    span.time {
+      margin-right: 10px;
+    }
+  }
+
+}
+
+.breadcrumb-container {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #297FA6;
+  color: white;
+  font-size: 14px;
+
+  p {
+    margin: 0px !important;
+  }
+
+  a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+
+  .breadcrumb_last {
+    font-style: italic;
+  }
+}
