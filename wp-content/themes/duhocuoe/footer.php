@@ -4,11 +4,16 @@
  *
  * Contains the closing of the #content div and all content after
  */
+
+//get Menu sidemap
+
+
 ?>
 </div><!-- #content -->
 <?php global $hideFooter;
 if (!$hideFooter) { ?>
-    <section class="footer-form" id="footer-form" style="background-image: url('/wp-content/themes/duhocuoe/images/background-section-1.png')">
+    <section class="footer-form" id="footer-form"
+             style="background-image: url('/wp-content/themes/duhocuoe/images/background-section-1.png')">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-12">
@@ -22,7 +27,8 @@ if (!$hideFooter) { ?>
                                 <input type="text" class="phone" name="phone" placeholder="Số điện thoại">
                             </div>
                             <div class="col-6">
-                                <input type="text" class="science-care" name="science_care" placeholder="Khóa học quan tâm">
+                                <input type="text" class="science-care" name="science_care"
+                                       placeholder="Khóa học quan tâm">
                             </div>
                             <div class="col-6">
                                 <input type="text" class="email" name="email" placeholder="Email">
@@ -39,12 +45,12 @@ if (!$hideFooter) { ?>
                 <div class="col-md-4 col-12 d-flex align-items-center justify-content-center">
                     <div class="sitemap" id="sitemap">
                         <h3>Liên kết trang</h3>
-                        <ul class="sitemap-list">
-                            <li><a href="/">Trang chủ</a></li>
-                            <li><a href="/">Liên hệ</a></li>
-                            <li><a href="/">Giới thiệu</a></li>
-                            <li><a href="/">Tin tức</a></li>
-                        </ul>
+                        <?php echo wp_nav_menu($args = array(
+                            'menu_class' => 'sitemap-list',
+                            'theme_location' => 'primary-navigation-1',
+                            'depth' => "1", // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
+                        )); ?>
+
                     </div>
                 </div>
             </div>
