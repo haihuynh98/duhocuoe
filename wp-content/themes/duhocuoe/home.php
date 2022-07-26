@@ -116,7 +116,7 @@ if (count($postScholarship) == 0 && function_exists('tg_get_all_post')) {
                             <div class="post-container">
                                 <h3 class="post-title"><?= $popularPost->post_title ?></h3>
                                 <p class="post-date text-center"> <?= get_the_date('j F, Y', $popularPost->ID) ?></p>
-                                <img class="crop-image-400"
+                                <img class="crop-image-400 h-mobile-50"
                                      src="<?= get_the_post_thumbnail_url($popularPost->ID) ?>"
                                      alt="<?= $popularPost->post_title ?>"
                                      onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';">

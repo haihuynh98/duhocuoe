@@ -1,4 +1,4 @@
-<section class="our-customers section-home">
+<section class="our-customers section-home ">
     <div class="container-fluid">
         <div class="swiper-container swiper-customers">
             <div class="swiper-wrapper swiper-customers-wrapper">

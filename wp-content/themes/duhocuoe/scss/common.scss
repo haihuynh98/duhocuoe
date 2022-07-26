@@ -818,6 +818,12 @@ ul.page-numbers {
     height: $i*100px !important;
     object-fit: cover;
     object-position: center;
+
+    &.h-mobile-50 {
+      @media screen and (max-width: 425px) {
+        height: $i*50px !important;
+      }
+    }
   }
 }
 

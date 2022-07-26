@@ -26,12 +26,12 @@ if (!$hideFooter) { ?>
                             <div class="col-6">
                                 <input type="text" class="phone" name="phone" placeholder="Số điện thoại">
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6 col-12">
+                                <input type="text" class="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="col-md-6 col-12">
                                 <input type="text" class="science-care" name="science_care"
                                        placeholder="Khóa học quan tâm">
-                            </div>
-                            <div class="col-6">
-                                <input type="text" class="email" name="email" placeholder="Email">
                             </div>
                             <div class="col-12">
                                 <textarea id="message" name="message" rows="4" placeholder="Nội dung"></textarea>
