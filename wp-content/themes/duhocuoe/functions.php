@@ -1296,6 +1296,7 @@ function load_css_js()
     }
      if (is_page() || is_single()){
          wp_enqueue_style('page', get_template_directory_uri() . '/css/page.css');
+         wp_enqueue_script('page', get_template_directory_uri() . '/js/page.js', null, null, true);
      }
     if (is_home()) {
         wp_enqueue_style('swiper', get_template_directory_uri() . '/swiper/swiper-bundle.min.css');
