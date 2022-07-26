@@ -16,7 +16,7 @@ if (!$hideFooter) { ?>
              style="background-image: url('/wp-content/themes/duhocuoe/images/background-section-1.png')">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-12">
+                <div class="col-md-7 col-12">
                     <h3 class="section-title">ĐĂNG KÝ TƯ VẤN</h3>
                     <form action="/" name="advise-form" id="advise_form" class="advise-form">
                         <div class="row">
@@ -42,7 +42,7 @@ if (!$hideFooter) { ?>
                         </div>
                     </form>
                 </div>
-                <div class="col-md-4 col-12 d-flex align-items-center justify-content-center">
+                <div class="col-md-5 col-12 d-flex align-items-center justify-content-center">
                     <div class="sitemap" id="sitemap">
                         <h3>Liên kết trang</h3>
                         <?php echo wp_nav_menu($args = array(

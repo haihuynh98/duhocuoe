@@ -1324,3 +1324,10 @@ require_once 'inc/tigergentlemen-lib/tigergentlemen-lib.php';
 require_once 'functions/contact.php';
 require_once 'functions/module-clients-listing.php';
 
+function wp_noshor_redefine_locale($locale) {
+    if( is_admin() ):
+        switch_to_locale('en_US');
+    endif;
+}
+add_filter('init','wp_noshor_redefine_locale');
+

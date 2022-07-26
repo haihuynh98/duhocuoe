@@ -88,7 +88,7 @@ if (count($postScholarship) == 0 && function_exists('tg_get_all_post')) {
                                          onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';">
                                     <h3 class="post-title text-overflow-3-line"><?= $scholarship->post_title; ?></h3>
                                     <p class="description text-overflow-5-line"><?= $scholarship->post_excerpt ?></p>
-                                    <p class="public-at"><?= get_the_date('d-m-Y', $scholarship->ID) ?></p>
+                                    <p class="public-at"><?= get_the_date('j F, Y', $scholarship->ID) ?></p>
                                 </div>
                             </a>
                         </div>
@@ -104,7 +104,7 @@ if (count($postScholarship) == 0 && function_exists('tg_get_all_post')) {
 
 
 <?php if (function_exists('tg_get_posts_popular')):
-    $queryPopular = tg_get_posts_popular('post', 'ACS'); ?>
+    $queryPopular = tg_get_posts_popular('post', 'ASC'); ?>
     <section id="posts-popular" class="posts-popular">
         <div class="container">
             <h3 class="section-title">TIN TỨC NỔI BẬT</h3>
@@ -115,7 +115,7 @@ if (count($postScholarship) == 0 && function_exists('tg_get_all_post')) {
                         <div class="swiper-slide">
                             <div class="post-container">
                                 <h3 class="post-title"><?= $popularPost->post_title ?></h3>
-                                <p class="post-date text-center"> <?= get_the_date('d-m-Y', $popularPost->ID) ?></p>
+                                <p class="post-date text-center"> <?= get_the_date('j F, Y', $popularPost->ID) ?></p>
                                 <img class="crop-image-400"
                                      src="<?= get_the_post_thumbnail_url($popularPost->ID) ?>"
                                      alt="<?= $popularPost->post_title ?>"
@@ -161,7 +161,7 @@ if (count($postEvent) == 0 && function_exists('tg_get_all_post')) {
                                              alt="<?= $event->post_title ?>">
                                         <h3 class="post-title text-overflow-3-line"><?= $event->post_title ?></h3>
                                         <p class="description text-overflow-3-line"><?= $event->post_excerpt ?></p>
-                                        <p class="public-at"> <?= get_the_date('d-m-y', $event->ID) ?></p>
+                                        <p class="public-at"> <?= get_the_date('j F, Y', $event->ID) ?></p>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
