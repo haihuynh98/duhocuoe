@@ -186,7 +186,7 @@ if (version_compare($wp_version, '5.2', '>=')) {
                             <form action="/" class="search-form" id="search_form">
                                 <div class="form-group has-search">
                                     <span class="fa fa-search form-control-feedback"></span>
-                                    <input type="text" class="form-control input-search" placeholder="Search" name="s">
+                                    <input type="text" class="form-control input-search" placeholder="Tra cứu" name="s">
                                 </div>
                             </form>
                         </div>
@@ -196,7 +196,7 @@ if (version_compare($wp_version, '5.2', '>=')) {
         </div>
     </header>
     <div id="content">
-        <?php if (is_single() || is_page()):?>
+        <?php if (is_single() || is_page() || is_archive()):?>
         <div class="container">
             <div class="breadcrumb-container">
                 <?php

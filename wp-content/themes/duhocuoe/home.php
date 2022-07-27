@@ -183,21 +183,22 @@ if (count($postEvent) == 0 && function_exists('tg_get_all_post')) {
                     <div class="member-item">
                         <img src="/wp-content/themes/duhocuoe/images/hocvien/MNpQ4sfn.jpeg" alt="people" class="member-avt">
                         <p>"Các anh chị tư vấn viên UOE rất nhiệt tình và có nhiều hiểu biết về các trường, ngành, giúp việc định hướng của em được nhanh và chính xác hơn."</p>
-                        <h4 class="member-name">Ngọc Mẫn</h4>
+
+                        <div class="member-footer"><h4 class="member-name">Ngọc Mẫn</h4></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="member-item">
                         <img src="/wp-content/themes/duhocuoe/images/hocvien/N4FQUTrb.jpeg" alt="people" class="member-avt">
                         <p>"Đài Loan là đất nước tuyệt vời! Con người thân thiện, khí hậu dễ chịu và quan trọng hơn hết là chất lượng giáo dục rất tốt! "</p>
-                        <h4 class="member-name">Ngọc Ánh</h4>
+                        <div class="member-footer"><h4 class="member-name">Ngọc Ánh</h4></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="member-item">
                         <img src="/wp-content/themes/duhocuoe/images/hocvien/ZL3oGpxj.jpeg" alt="people" class="member-avt">
                         <p>"Du học Đài Loan là ước mơ từ rất lâu của mình. Cuối cùng mình đã hiện thực hóa được giấc mơ đó. Cảm ơn UOE rất nhiều. "</p>
-                        <h4 class="member-name">Khánh Ly</h4>
+                        <div class="member-footer"><h4 class="member-name">Khánh Ly</h4></div>
                     </div>
                 </div>
             </div>

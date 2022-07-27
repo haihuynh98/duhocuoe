@@ -1294,10 +1294,13 @@ function load_css_js()
         wp_register_style("contact-page", get_template_directory_uri() . '/css/contact.css');
         wp_enqueue_style("contact-page");
     }
-     if (is_page() || is_single()){
-         wp_enqueue_style('page', get_template_directory_uri() . '/css/page.css');
-         wp_enqueue_script('page', get_template_directory_uri() . '/js/page.js', null, null, true);
-     }
+    if (is_page() || is_single() || is_archive()) {
+        wp_enqueue_style('page', get_template_directory_uri() . '/css/page.css');
+        wp_enqueue_script('page', get_template_directory_uri() . '/js/page.js', null, null, true);
+    }
+    if (is_archive()) {
+        wp_enqueue_style('archive-list', get_template_directory_uri() . '/css/archive.min.css');
+    }
     if (is_home()) {
         wp_enqueue_style('swiper', get_template_directory_uri() . '/swiper/swiper-bundle.min.css');
         wp_enqueue_style('home', get_template_directory_uri() . '/css/home.css');
@@ -1325,10 +1328,18 @@ require_once 'inc/tigergentlemen-lib/tigergentlemen-lib.php';
 require_once 'functions/contact.php';
 require_once 'functions/module-clients-listing.php';
 
-function wp_noshor_redefine_locale($locale) {
-    if( is_admin() ):
+/**
+ * REQUIRED FILES
+ * Include required files.
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+function wp_noshor_redefine_locale($locale)
+{
+    if (is_admin()):
         switch_to_locale('en_US');
     endif;
 }
-add_filter('init','wp_noshor_redefine_locale');
+
+add_filter('init', 'wp_noshor_redefine_locale');
 
