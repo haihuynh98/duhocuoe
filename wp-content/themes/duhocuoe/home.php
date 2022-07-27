@@ -20,30 +20,68 @@ get_header();
         <div class="overlay-banner">
             <div class="container">
                 <div class="form-filter">
+                    <?php
+                    $majors = [
+                        'Y Học',
+                        'Nông Nghiệp',
+                        'Lịch Sử',
+                        'Quản lý',
+                        'Kinh doanh',
+                        'Thiết kế đồ họa',
+                        'Công nghệ thông tin',
+                        "Khoa học máy tính"
+                    ];
+                    $countrys = [
+                        'canada',
+                        'new zealand',
+                        'úc',
+                        'thụy sỹ',
+                        'tây ban nha',
+                        'hà lan',
+                        'philippines',
+                        'malaysia',
+                        'malta',
+                        'singapore',
+                        'trung quốc',
+                        'đài loan',
+                        'nhật bản',
+                        'thái lan',
+                        'hàn quốc',
+                        'mỹ'
+                    ];
+
+
+                    $certificates = [
+                        'trung học',
+                        'ngôn ngữ',
+                        'cao học',
+                        'đại học',
+                        'cao đẳng',
+                    ];
+                    ?>
+
                     <form action="/" id="filter-major">
-                        <select name="majors" id="majors">
+                        <input type="text" id="input_search" name="s" style="display:none;">
+                        <input type="hidden" name="post_type" value="post">
+                        <select id="majors">
                             <option value="">Ngành học</option>
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
+                            <?php foreach ($majors as $major): ?>
+                                <option value="<?= $major?>"><?= $major?></option>
+                            <?php endforeach; ?>
                         </select>
-                        <select name="country" id="country">
+                        <select id="country">
                             <option value="">Điểm đến</option>
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
+                            <?php foreach ($countrys as $country): ?>
+                                <option value="<?= $country?>"><?= $country?></option>
+                            <?php endforeach; ?>
                         </select>
-                        <select name="certificate" id="certificate">
+                        <select id="certificate">
                             <option value="">Bằng cấp</option>
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
+                            <?php foreach ($certificates as $certificate): ?>
+                                <option value="<?= $certificate?>"><?= $certificate?></option>
+                            <?php endforeach; ?>
                         </select>
-                        <input type="hidden" name="s"  value="học phí, đài loan">
-                        <input type="submit" class="submit btn" id="submit" name="submit" value="Tra cứu">
+                        <input type="submit" class="submit btn" id="submit" value="Tra cứu" disabled>
                     </form>
                 </div>
             </div>
@@ -182,23 +220,29 @@ if (count($postEvent) == 0 && function_exists('tg_get_all_post')) {
             <div class="row">
                 <div class="col-md-4 col-12">
                     <div class="member-item">
-                        <img src="/wp-content/themes/duhocuoe/images/hocvien/MNpQ4sfn.jpeg" alt="people" class="member-avt">
-                        <p>"Các anh chị tư vấn viên UOE rất nhiệt tình và có nhiều hiểu biết về các trường, ngành, giúp việc định hướng của em được nhanh và chính xác hơn."</p>
+                        <img src="/wp-content/themes/duhocuoe/images/hocvien/MNpQ4sfn.jpeg" alt="people"
+                             class="member-avt">
+                        <p>"Các anh chị tư vấn viên UOE rất nhiệt tình và có nhiều hiểu biết về các trường, ngành, giúp
+                            việc định hướng của em được nhanh và chính xác hơn."</p>
 
                         <div class="member-footer"><h4 class="member-name">Ngọc Mẫn</h4></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="member-item">
-                        <img src="/wp-content/themes/duhocuoe/images/hocvien/N4FQUTrb.jpeg" alt="people" class="member-avt">
-                        <p>"Đài Loan là đất nước tuyệt vời! Con người thân thiện, khí hậu dễ chịu và quan trọng hơn hết là chất lượng giáo dục rất tốt! "</p>
+                        <img src="/wp-content/themes/duhocuoe/images/hocvien/N4FQUTrb.jpeg" alt="people"
+                             class="member-avt">
+                        <p>"Đài Loan là đất nước tuyệt vời! Con người thân thiện, khí hậu dễ chịu và quan trọng hơn hết
+                            là chất lượng giáo dục rất tốt! "</p>
                         <div class="member-footer"><h4 class="member-name">Ngọc Ánh</h4></div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="member-item">
-                        <img src="/wp-content/themes/duhocuoe/images/hocvien/ZL3oGpxj.jpeg" alt="people" class="member-avt">
-                        <p>"Du học Đài Loan là ước mơ từ rất lâu của mình. Cuối cùng mình đã hiện thực hóa được giấc mơ đó. Cảm ơn UOE rất nhiều. "</p>
+                        <img src="/wp-content/themes/duhocuoe/images/hocvien/ZL3oGpxj.jpeg" alt="people"
+                             class="member-avt">
+                        <p>"Du học Đài Loan là ước mơ từ rất lâu của mình. Cuối cùng mình đã hiện thực hóa được giấc mơ
+                            đó. Cảm ơn UOE rất nhiều. "</p>
                         <div class="member-footer"><h4 class="member-name">Khánh Ly</h4></div>
                     </div>
                 </div>
@@ -210,7 +254,8 @@ if (count($postEvent) == 0 && function_exists('tg_get_all_post')) {
             <h3 class="section-title">CHUYÊN VIÊN TƯ VẤN</h3>
             <div class="row">
                 <div class="col-md-3 col-6 member-item">
-                    <img src="/wp-content/themes/duhocuoe/images/tuvanvien/z3557173750596_5ae7b53c44b2cc2c3830dbb7736c231f.jpeg" alt="people"
+                    <img src="/wp-content/themes/duhocuoe/images/tuvanvien/z3557173750596_5ae7b53c44b2cc2c3830dbb7736c231f.jpeg"
+                         alt="people"
                          class="member-avt">
                     <h4 class="member-name">Châu Ngọc Phương</h4>
                     <p>Tư vấn viên</p>

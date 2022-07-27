@@ -187,6 +187,7 @@ if (version_compare($wp_version, '5.2', '>=')) {
                                 <div class="form-group has-search">
                                     <span class="fa fa-search form-control-feedback"></span>
                                     <input type="text" class="form-control input-search" placeholder="Tra cứu" name="s">
+                                    <input type="hidden" name="post_type" value="post">
                                 </div>
                             </form>
                         </div>

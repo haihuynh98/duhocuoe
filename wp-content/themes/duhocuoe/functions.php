@@ -1315,7 +1315,9 @@ function load_css_js()
 
         wp_enqueue_script('swiper-post-scholarship', get_template_directory_uri() . '/js/swiper-post-scholarship.js', null, null, true);
         wp_enqueue_script('swiper-post-popular', get_template_directory_uri() . '/js/swiper-post-popular.js', null, null, true);
-        wp_enqueue_script('swiper-event', get_template_directory_uri() . '/js/swiper-event.js', null, null, true);
+        wp_enqueue_script('swiper-event', get_template_directory_uri() . '/js/swiper-event.js', null, null, true);        wp_enqueue_script('search-page', get_template_directory_uri() . '/js/search-page.js', null, null, true);
+        wp_enqueue_script('search-page', get_template_directory_uri() . '/js/search-page.js', null, null, true);
+
     }
 //    wp_enqueue_style('header', get_template_directory_uri() . '/css/header.min.css', [], false);
 }
