@@ -1,6 +1,12 @@
 section.member-sharing {
   padding-bottom: 20px;
 
+  .row {
+    .col-12 {
+      margin-bottom: 20px;
+    }
+  }
+
   .member-item {
     border-radius: 20px;
     background-color: white;
