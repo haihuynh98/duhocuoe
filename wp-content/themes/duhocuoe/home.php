@@ -42,6 +42,7 @@ get_header();
                             <option value="mercedes">Mercedes</option>
                             <option value="audi">Audi</option>
                         </select>
+                        <input type="hidden" name="s"  value="học phí, đài loan">
                         <input type="submit" class="submit btn" id="submit" name="submit" value="Tra cứu">
                     </form>
                 </div>

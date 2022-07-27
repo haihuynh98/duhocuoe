@@ -18,14 +18,6 @@ $description = get_the_archive_description();
     <div class="container">
         <div class="row">
             <div class="col-lg-9 col-12 left-col">
-                <!--                <header class="text-left">-->
-                <!--                    --><?php //the_archive_title('<h3 class="title-page">', '</h3>'); ?>
-                <!--                    --><?php //if ($description) : ?>
-                <!--                        <div class="archive-description">-->
-                <?php //echo wp_kses_post(wpautop($description)); ?><!--</div>-->
-                <!--                    --><?php //endif; ?>
-                <!--                </header>-->
-
 
                 <section class="article-list">
                     <div class="container">

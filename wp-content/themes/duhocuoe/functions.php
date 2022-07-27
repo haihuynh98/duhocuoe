@@ -1294,7 +1294,7 @@ function load_css_js()
         wp_register_style("contact-page", get_template_directory_uri() . '/css/contact.css');
         wp_enqueue_style("contact-page");
     }
-    if (is_page() || is_single() || is_archive()) {
+    if (is_page() || is_single() || is_archive() || is_search()) {
         wp_enqueue_style('page', get_template_directory_uri() . '/css/page.css');
         wp_enqueue_script('page', get_template_directory_uri() . '/js/page.js', null, null, true);
     }
