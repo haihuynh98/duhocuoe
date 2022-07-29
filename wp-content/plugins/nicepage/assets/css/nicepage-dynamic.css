@@ -9779,6 +9779,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-1-dark-3,
 a.u-button-style.u-button-style.active > .u-text-active-color-1-dark-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-1-dark-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-1-dark-3.active,
+.u-text-hover-color-1-dark-3.u-language-url:hover,
+.u-text-hover-color-1-dark-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-1-dark-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-1-dark-3 .u-nav-link.active {
   color: var(--color-1-dark-3) !important;
@@ -9833,6 +9835,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-1-dark-2,
 a.u-button-style.u-button-style.active > .u-text-active-color-1-dark-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-1-dark-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-1-dark-2.active,
+.u-text-hover-color-1-dark-2.u-language-url:hover,
+.u-text-hover-color-1-dark-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-1-dark-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-1-dark-2 .u-nav-link.active {
   color: var(--color-1-dark-2) !important;
@@ -9887,6 +9891,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-1-dark-1,
 a.u-button-style.u-button-style.active > .u-text-active-color-1-dark-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-1-dark-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-1-dark-1.active,
+.u-text-hover-color-1-dark-1.u-language-url:hover,
+.u-text-hover-color-1-dark-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-1-dark-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-1-dark-1 .u-nav-link.active {
   color: var(--color-1-dark-1) !important;
@@ -9941,6 +9947,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-1,
 a.u-button-style.u-button-style.active > .u-text-active-color-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-1.active,
+.u-text-hover-color-1.u-language-url:hover,
+.u-text-hover-color-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-1 .u-nav-link.active {
   color: var(--color-1) !important;
@@ -9995,6 +10003,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-1-light-1,
 a.u-button-style.u-button-style.active > .u-text-active-color-1-light-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-1-light-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-1-light-1.active,
+.u-text-hover-color-1-light-1.u-language-url:hover,
+.u-text-hover-color-1-light-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-1-light-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-1-light-1 .u-nav-link.active {
   color: var(--color-1-light-1) !important;
@@ -10049,6 +10059,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-1-light-2,
 a.u-button-style.u-button-style.active > .u-text-active-color-1-light-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-1-light-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-1-light-2.active,
+.u-text-hover-color-1-light-2.u-language-url:hover,
+.u-text-hover-color-1-light-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-1-light-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-1-light-2 .u-nav-link.active {
   color: var(--color-1-light-2) !important;
@@ -10103,6 +10115,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-1-light-3,
 a.u-button-style.u-button-style.active > .u-text-active-color-1-light-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-1-light-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-1-light-3.active,
+.u-text-hover-color-1-light-3.u-language-url:hover,
+.u-text-hover-color-1-light-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-1-light-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-1-light-3 .u-nav-link.active {
   color: var(--color-1-light-3) !important;
@@ -10157,6 +10171,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-1-base,
 a.u-button-style.u-button-style.active > .u-text-active-color-1-base[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-1-base:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-1-base.active,
+.u-text-hover-color-1-base.u-language-url:hover,
+.u-text-hover-color-1-base .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-1-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-1-base .u-nav-link.active {
   color: var(--color-1-base) !important;
@@ -10211,6 +10227,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-2-dark-3,
 a.u-button-style.u-button-style.active > .u-text-active-color-2-dark-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-2-dark-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-2-dark-3.active,
+.u-text-hover-color-2-dark-3.u-language-url:hover,
+.u-text-hover-color-2-dark-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-2-dark-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-2-dark-3 .u-nav-link.active {
   color: var(--color-2-dark-3) !important;
@@ -10265,6 +10283,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-2-dark-2,
 a.u-button-style.u-button-style.active > .u-text-active-color-2-dark-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-2-dark-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-2-dark-2.active,
+.u-text-hover-color-2-dark-2.u-language-url:hover,
+.u-text-hover-color-2-dark-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-2-dark-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-2-dark-2 .u-nav-link.active {
   color: var(--color-2-dark-2) !important;
@@ -10319,6 +10339,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-2-dark-1,
 a.u-button-style.u-button-style.active > .u-text-active-color-2-dark-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-2-dark-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-2-dark-1.active,
+.u-text-hover-color-2-dark-1.u-language-url:hover,
+.u-text-hover-color-2-dark-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-2-dark-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-2-dark-1 .u-nav-link.active {
   color: var(--color-2-dark-1) !important;
@@ -10373,6 +10395,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-2,
 a.u-button-style.u-button-style.active > .u-text-active-color-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-2.active,
+.u-text-hover-color-2.u-language-url:hover,
+.u-text-hover-color-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-2 .u-nav-link.active {
   color: var(--color-2) !important;
@@ -10427,6 +10451,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-2-light-1,
 a.u-button-style.u-button-style.active > .u-text-active-color-2-light-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-2-light-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-2-light-1.active,
+.u-text-hover-color-2-light-1.u-language-url:hover,
+.u-text-hover-color-2-light-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-2-light-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-2-light-1 .u-nav-link.active {
   color: var(--color-2-light-1) !important;
@@ -10481,6 +10507,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-2-light-2,
 a.u-button-style.u-button-style.active > .u-text-active-color-2-light-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-2-light-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-2-light-2.active,
+.u-text-hover-color-2-light-2.u-language-url:hover,
+.u-text-hover-color-2-light-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-2-light-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-2-light-2 .u-nav-link.active {
   color: var(--color-2-light-2) !important;
@@ -10535,6 +10563,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-2-light-3,
 a.u-button-style.u-button-style.active > .u-text-active-color-2-light-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-2-light-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-2-light-3.active,
+.u-text-hover-color-2-light-3.u-language-url:hover,
+.u-text-hover-color-2-light-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-2-light-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-2-light-3 .u-nav-link.active {
   color: var(--color-2-light-3) !important;
@@ -10589,6 +10619,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-2-base,
 a.u-button-style.u-button-style.active > .u-text-active-color-2-base[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-2-base:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-2-base.active,
+.u-text-hover-color-2-base.u-language-url:hover,
+.u-text-hover-color-2-base .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-2-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-2-base .u-nav-link.active {
   color: var(--color-2-base) !important;
@@ -10643,6 +10675,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-3-dark-3,
 a.u-button-style.u-button-style.active > .u-text-active-color-3-dark-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-3-dark-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-3-dark-3.active,
+.u-text-hover-color-3-dark-3.u-language-url:hover,
+.u-text-hover-color-3-dark-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-3-dark-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-3-dark-3 .u-nav-link.active {
   color: var(--color-3-dark-3) !important;
@@ -10697,6 +10731,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-3-dark-2,
 a.u-button-style.u-button-style.active > .u-text-active-color-3-dark-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-3-dark-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-3-dark-2.active,
+.u-text-hover-color-3-dark-2.u-language-url:hover,
+.u-text-hover-color-3-dark-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-3-dark-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-3-dark-2 .u-nav-link.active {
   color: var(--color-3-dark-2) !important;
@@ -10751,6 +10787,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-3-dark-1,
 a.u-button-style.u-button-style.active > .u-text-active-color-3-dark-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-3-dark-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-3-dark-1.active,
+.u-text-hover-color-3-dark-1.u-language-url:hover,
+.u-text-hover-color-3-dark-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-3-dark-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-3-dark-1 .u-nav-link.active {
   color: var(--color-3-dark-1) !important;
@@ -10805,6 +10843,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-3,
 a.u-button-style.u-button-style.active > .u-text-active-color-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-3.active,
+.u-text-hover-color-3.u-language-url:hover,
+.u-text-hover-color-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-3 .u-nav-link.active {
   color: var(--color-3) !important;
@@ -10859,6 +10899,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-3-light-1,
 a.u-button-style.u-button-style.active > .u-text-active-color-3-light-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-3-light-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-3-light-1.active,
+.u-text-hover-color-3-light-1.u-language-url:hover,
+.u-text-hover-color-3-light-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-3-light-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-3-light-1 .u-nav-link.active {
   color: var(--color-3-light-1) !important;
@@ -10913,6 +10955,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-3-light-2,
 a.u-button-style.u-button-style.active > .u-text-active-color-3-light-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-3-light-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-3-light-2.active,
+.u-text-hover-color-3-light-2.u-language-url:hover,
+.u-text-hover-color-3-light-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-3-light-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-3-light-2 .u-nav-link.active {
   color: var(--color-3-light-2) !important;
@@ -10967,6 +11011,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-3-light-3,
 a.u-button-style.u-button-style.active > .u-text-active-color-3-light-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-3-light-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-3-light-3.active,
+.u-text-hover-color-3-light-3.u-language-url:hover,
+.u-text-hover-color-3-light-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-3-light-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-3-light-3 .u-nav-link.active {
   color: var(--color-3-light-3) !important;
@@ -11021,6 +11067,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-3-base,
 a.u-button-style.u-button-style.active > .u-text-active-color-3-base[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-3-base:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-3-base.active,
+.u-text-hover-color-3-base.u-language-url:hover,
+.u-text-hover-color-3-base .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-3-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-3-base .u-nav-link.active {
   color: var(--color-3-base) !important;
@@ -11075,6 +11123,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-4-dark-3,
 a.u-button-style.u-button-style.active > .u-text-active-color-4-dark-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-4-dark-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-4-dark-3.active,
+.u-text-hover-color-4-dark-3.u-language-url:hover,
+.u-text-hover-color-4-dark-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-4-dark-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-4-dark-3 .u-nav-link.active {
   color: var(--color-4-dark-3) !important;
@@ -11129,6 +11179,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-4-dark-2,
 a.u-button-style.u-button-style.active > .u-text-active-color-4-dark-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-4-dark-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-4-dark-2.active,
+.u-text-hover-color-4-dark-2.u-language-url:hover,
+.u-text-hover-color-4-dark-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-4-dark-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-4-dark-2 .u-nav-link.active {
   color: var(--color-4-dark-2) !important;
@@ -11183,6 +11235,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-4-dark-1,
 a.u-button-style.u-button-style.active > .u-text-active-color-4-dark-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-4-dark-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-4-dark-1.active,
+.u-text-hover-color-4-dark-1.u-language-url:hover,
+.u-text-hover-color-4-dark-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-4-dark-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-4-dark-1 .u-nav-link.active {
   color: var(--color-4-dark-1) !important;
@@ -11237,6 +11291,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-4,
 a.u-button-style.u-button-style.active > .u-text-active-color-4[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-4:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-4.active,
+.u-text-hover-color-4.u-language-url:hover,
+.u-text-hover-color-4 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-4 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-4 .u-nav-link.active {
   color: var(--color-4) !important;
@@ -11291,6 +11347,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-4-light-1,
 a.u-button-style.u-button-style.active > .u-text-active-color-4-light-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-4-light-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-4-light-1.active,
+.u-text-hover-color-4-light-1.u-language-url:hover,
+.u-text-hover-color-4-light-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-4-light-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-4-light-1 .u-nav-link.active {
   color: var(--color-4-light-1) !important;
@@ -11345,6 +11403,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-4-light-2,
 a.u-button-style.u-button-style.active > .u-text-active-color-4-light-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-4-light-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-4-light-2.active,
+.u-text-hover-color-4-light-2.u-language-url:hover,
+.u-text-hover-color-4-light-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-4-light-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-4-light-2 .u-nav-link.active {
   color: var(--color-4-light-2) !important;
@@ -11399,6 +11459,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-4-light-3,
 a.u-button-style.u-button-style.active > .u-text-active-color-4-light-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-4-light-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-4-light-3.active,
+.u-text-hover-color-4-light-3.u-language-url:hover,
+.u-text-hover-color-4-light-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-4-light-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-4-light-3 .u-nav-link.active {
   color: var(--color-4-light-3) !important;
@@ -11453,6 +11515,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-4-base,
 a.u-button-style.u-button-style.active > .u-text-active-color-4-base[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-4-base:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-4-base.active,
+.u-text-hover-color-4-base.u-language-url:hover,
+.u-text-hover-color-4-base .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-4-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-4-base .u-nav-link.active {
   color: var(--color-4-base) !important;
@@ -11507,6 +11571,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-5-dark-3,
 a.u-button-style.u-button-style.active > .u-text-active-color-5-dark-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-5-dark-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-5-dark-3.active,
+.u-text-hover-color-5-dark-3.u-language-url:hover,
+.u-text-hover-color-5-dark-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-5-dark-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-5-dark-3 .u-nav-link.active {
   color: var(--color-5-dark-3) !important;
@@ -11561,6 +11627,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-5-dark-2,
 a.u-button-style.u-button-style.active > .u-text-active-color-5-dark-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-5-dark-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-5-dark-2.active,
+.u-text-hover-color-5-dark-2.u-language-url:hover,
+.u-text-hover-color-5-dark-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-5-dark-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-5-dark-2 .u-nav-link.active {
   color: var(--color-5-dark-2) !important;
@@ -11615,6 +11683,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-5-dark-1,
 a.u-button-style.u-button-style.active > .u-text-active-color-5-dark-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-5-dark-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-5-dark-1.active,
+.u-text-hover-color-5-dark-1.u-language-url:hover,
+.u-text-hover-color-5-dark-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-5-dark-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-5-dark-1 .u-nav-link.active {
   color: var(--color-5-dark-1) !important;
@@ -11669,6 +11739,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-5,
 a.u-button-style.u-button-style.active > .u-text-active-color-5[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-5:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-5.active,
+.u-text-hover-color-5.u-language-url:hover,
+.u-text-hover-color-5 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-5 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-5 .u-nav-link.active {
   color: var(--color-5) !important;
@@ -11723,6 +11795,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-5-light-1,
 a.u-button-style.u-button-style.active > .u-text-active-color-5-light-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-5-light-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-5-light-1.active,
+.u-text-hover-color-5-light-1.u-language-url:hover,
+.u-text-hover-color-5-light-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-5-light-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-5-light-1 .u-nav-link.active {
   color: var(--color-5-light-1) !important;
@@ -11777,6 +11851,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-5-light-2,
 a.u-button-style.u-button-style.active > .u-text-active-color-5-light-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-5-light-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-5-light-2.active,
+.u-text-hover-color-5-light-2.u-language-url:hover,
+.u-text-hover-color-5-light-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-5-light-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-5-light-2 .u-nav-link.active {
   color: var(--color-5-light-2) !important;
@@ -11831,6 +11907,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-5-light-3,
 a.u-button-style.u-button-style.active > .u-text-active-color-5-light-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-5-light-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-5-light-3.active,
+.u-text-hover-color-5-light-3.u-language-url:hover,
+.u-text-hover-color-5-light-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-5-light-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-5-light-3 .u-nav-link.active {
   color: var(--color-5-light-3) !important;
@@ -11885,6 +11963,8 @@ a.u-button-style.u-button-style.active > .u-text-active-color-5-base,
 a.u-button-style.u-button-style.active > .u-text-active-color-5-base[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-color-5-base:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-color-5-base.active,
+.u-text-hover-color-5-base.u-language-url:hover,
+.u-text-hover-color-5-base .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-color-5-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-color-5-base .u-nav-link.active {
   color: var(--color-5-base) !important;
@@ -11939,6 +12019,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-1-dark-3,
 a.u-button-style.u-button-style.active > .u-text-active-palette-1-dark-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-1-dark-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-1-dark-3.active,
+.u-text-hover-palette-1-dark-3.u-language-url:hover,
+.u-text-hover-palette-1-dark-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-1-dark-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-1-dark-3 .u-nav-link.active {
   color: var(--palette-1-dark-3) !important;
@@ -11993,6 +12075,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-1-dark-2,
 a.u-button-style.u-button-style.active > .u-text-active-palette-1-dark-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-1-dark-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-1-dark-2.active,
+.u-text-hover-palette-1-dark-2.u-language-url:hover,
+.u-text-hover-palette-1-dark-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-1-dark-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-1-dark-2 .u-nav-link.active {
   color: var(--palette-1-dark-2) !important;
@@ -12047,6 +12131,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-1-dark-1,
 a.u-button-style.u-button-style.active > .u-text-active-palette-1-dark-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-1-dark-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-1-dark-1.active,
+.u-text-hover-palette-1-dark-1.u-language-url:hover,
+.u-text-hover-palette-1-dark-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-1-dark-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-1-dark-1 .u-nav-link.active {
   color: var(--palette-1-dark-1) !important;
@@ -12101,6 +12187,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-1,
 a.u-button-style.u-button-style.active > .u-text-active-palette-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-1.active,
+.u-text-hover-palette-1.u-language-url:hover,
+.u-text-hover-palette-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-1 .u-nav-link.active {
   color: var(--palette-1) !important;
@@ -12155,6 +12243,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-1-light-1,
 a.u-button-style.u-button-style.active > .u-text-active-palette-1-light-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-1-light-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-1-light-1.active,
+.u-text-hover-palette-1-light-1.u-language-url:hover,
+.u-text-hover-palette-1-light-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-1-light-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-1-light-1 .u-nav-link.active {
   color: var(--palette-1-light-1) !important;
@@ -12209,6 +12299,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-1-light-2,
 a.u-button-style.u-button-style.active > .u-text-active-palette-1-light-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-1-light-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-1-light-2.active,
+.u-text-hover-palette-1-light-2.u-language-url:hover,
+.u-text-hover-palette-1-light-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-1-light-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-1-light-2 .u-nav-link.active {
   color: var(--palette-1-light-2) !important;
@@ -12263,6 +12355,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-1-light-3,
 a.u-button-style.u-button-style.active > .u-text-active-palette-1-light-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-1-light-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-1-light-3.active,
+.u-text-hover-palette-1-light-3.u-language-url:hover,
+.u-text-hover-palette-1-light-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-1-light-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-1-light-3 .u-nav-link.active {
   color: var(--palette-1-light-3) !important;
@@ -12317,6 +12411,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-1-base,
 a.u-button-style.u-button-style.active > .u-text-active-palette-1-base[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-1-base:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-1-base.active,
+.u-text-hover-palette-1-base.u-language-url:hover,
+.u-text-hover-palette-1-base .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-1-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-1-base .u-nav-link.active {
   color: var(--palette-1-base) !important;
@@ -12371,6 +12467,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-2-dark-3,
 a.u-button-style.u-button-style.active > .u-text-active-palette-2-dark-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-2-dark-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-2-dark-3.active,
+.u-text-hover-palette-2-dark-3.u-language-url:hover,
+.u-text-hover-palette-2-dark-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-2-dark-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-2-dark-3 .u-nav-link.active {
   color: var(--palette-2-dark-3) !important;
@@ -12425,6 +12523,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-2-dark-2,
 a.u-button-style.u-button-style.active > .u-text-active-palette-2-dark-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-2-dark-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-2-dark-2.active,
+.u-text-hover-palette-2-dark-2.u-language-url:hover,
+.u-text-hover-palette-2-dark-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-2-dark-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-2-dark-2 .u-nav-link.active {
   color: var(--palette-2-dark-2) !important;
@@ -12479,6 +12579,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-2-dark-1,
 a.u-button-style.u-button-style.active > .u-text-active-palette-2-dark-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-2-dark-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-2-dark-1.active,
+.u-text-hover-palette-2-dark-1.u-language-url:hover,
+.u-text-hover-palette-2-dark-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-2-dark-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-2-dark-1 .u-nav-link.active {
   color: var(--palette-2-dark-1) !important;
@@ -12533,6 +12635,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-2,
 a.u-button-style.u-button-style.active > .u-text-active-palette-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-2.active,
+.u-text-hover-palette-2.u-language-url:hover,
+.u-text-hover-palette-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-2 .u-nav-link.active {
   color: var(--palette-2) !important;
@@ -12587,6 +12691,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-2-light-1,
 a.u-button-style.u-button-style.active > .u-text-active-palette-2-light-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-2-light-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-2-light-1.active,
+.u-text-hover-palette-2-light-1.u-language-url:hover,
+.u-text-hover-palette-2-light-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-2-light-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-2-light-1 .u-nav-link.active {
   color: var(--palette-2-light-1) !important;
@@ -12641,6 +12747,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-2-light-2,
 a.u-button-style.u-button-style.active > .u-text-active-palette-2-light-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-2-light-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-2-light-2.active,
+.u-text-hover-palette-2-light-2.u-language-url:hover,
+.u-text-hover-palette-2-light-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-2-light-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-2-light-2 .u-nav-link.active {
   color: var(--palette-2-light-2) !important;
@@ -12695,6 +12803,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-2-light-3,
 a.u-button-style.u-button-style.active > .u-text-active-palette-2-light-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-2-light-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-2-light-3.active,
+.u-text-hover-palette-2-light-3.u-language-url:hover,
+.u-text-hover-palette-2-light-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-2-light-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-2-light-3 .u-nav-link.active {
   color: var(--palette-2-light-3) !important;
@@ -12749,6 +12859,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-2-base,
 a.u-button-style.u-button-style.active > .u-text-active-palette-2-base[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-2-base:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-2-base.active,
+.u-text-hover-palette-2-base.u-language-url:hover,
+.u-text-hover-palette-2-base .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-2-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-2-base .u-nav-link.active {
   color: var(--palette-2-base) !important;
@@ -12803,6 +12915,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-3-dark-3,
 a.u-button-style.u-button-style.active > .u-text-active-palette-3-dark-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-3-dark-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-3-dark-3.active,
+.u-text-hover-palette-3-dark-3.u-language-url:hover,
+.u-text-hover-palette-3-dark-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-3-dark-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-3-dark-3 .u-nav-link.active {
   color: var(--palette-3-dark-3) !important;
@@ -12857,6 +12971,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-3-dark-2,
 a.u-button-style.u-button-style.active > .u-text-active-palette-3-dark-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-3-dark-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-3-dark-2.active,
+.u-text-hover-palette-3-dark-2.u-language-url:hover,
+.u-text-hover-palette-3-dark-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-3-dark-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-3-dark-2 .u-nav-link.active {
   color: var(--palette-3-dark-2) !important;
@@ -12911,6 +13027,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-3-dark-1,
 a.u-button-style.u-button-style.active > .u-text-active-palette-3-dark-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-3-dark-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-3-dark-1.active,
+.u-text-hover-palette-3-dark-1.u-language-url:hover,
+.u-text-hover-palette-3-dark-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-3-dark-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-3-dark-1 .u-nav-link.active {
   color: var(--palette-3-dark-1) !important;
@@ -12965,6 +13083,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-3,
 a.u-button-style.u-button-style.active > .u-text-active-palette-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-3.active,
+.u-text-hover-palette-3.u-language-url:hover,
+.u-text-hover-palette-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-3 .u-nav-link.active {
   color: var(--palette-3) !important;
@@ -13019,6 +13139,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-3-light-1,
 a.u-button-style.u-button-style.active > .u-text-active-palette-3-light-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-3-light-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-3-light-1.active,
+.u-text-hover-palette-3-light-1.u-language-url:hover,
+.u-text-hover-palette-3-light-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-3-light-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-3-light-1 .u-nav-link.active {
   color: var(--palette-3-light-1) !important;
@@ -13073,6 +13195,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-3-light-2,
 a.u-button-style.u-button-style.active > .u-text-active-palette-3-light-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-3-light-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-3-light-2.active,
+.u-text-hover-palette-3-light-2.u-language-url:hover,
+.u-text-hover-palette-3-light-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-3-light-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-3-light-2 .u-nav-link.active {
   color: var(--palette-3-light-2) !important;
@@ -13127,6 +13251,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-3-light-3,
 a.u-button-style.u-button-style.active > .u-text-active-palette-3-light-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-3-light-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-3-light-3.active,
+.u-text-hover-palette-3-light-3.u-language-url:hover,
+.u-text-hover-palette-3-light-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-3-light-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-3-light-3 .u-nav-link.active {
   color: var(--palette-3-light-3) !important;
@@ -13181,6 +13307,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-3-base,
 a.u-button-style.u-button-style.active > .u-text-active-palette-3-base[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-3-base:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-3-base.active,
+.u-text-hover-palette-3-base.u-language-url:hover,
+.u-text-hover-palette-3-base .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-3-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-3-base .u-nav-link.active {
   color: var(--palette-3-base) !important;
@@ -13235,6 +13363,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-4-dark-3,
 a.u-button-style.u-button-style.active > .u-text-active-palette-4-dark-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-4-dark-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-4-dark-3.active,
+.u-text-hover-palette-4-dark-3.u-language-url:hover,
+.u-text-hover-palette-4-dark-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-4-dark-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-4-dark-3 .u-nav-link.active {
   color: var(--palette-4-dark-3) !important;
@@ -13289,6 +13419,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-4-dark-2,
 a.u-button-style.u-button-style.active > .u-text-active-palette-4-dark-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-4-dark-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-4-dark-2.active,
+.u-text-hover-palette-4-dark-2.u-language-url:hover,
+.u-text-hover-palette-4-dark-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-4-dark-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-4-dark-2 .u-nav-link.active {
   color: var(--palette-4-dark-2) !important;
@@ -13343,6 +13475,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-4-dark-1,
 a.u-button-style.u-button-style.active > .u-text-active-palette-4-dark-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-4-dark-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-4-dark-1.active,
+.u-text-hover-palette-4-dark-1.u-language-url:hover,
+.u-text-hover-palette-4-dark-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-4-dark-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-4-dark-1 .u-nav-link.active {
   color: var(--palette-4-dark-1) !important;
@@ -13397,6 +13531,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-4,
 a.u-button-style.u-button-style.active > .u-text-active-palette-4[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-4:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-4.active,
+.u-text-hover-palette-4.u-language-url:hover,
+.u-text-hover-palette-4 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-4 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-4 .u-nav-link.active {
   color: var(--palette-4) !important;
@@ -13451,6 +13587,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-4-light-1,
 a.u-button-style.u-button-style.active > .u-text-active-palette-4-light-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-4-light-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-4-light-1.active,
+.u-text-hover-palette-4-light-1.u-language-url:hover,
+.u-text-hover-palette-4-light-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-4-light-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-4-light-1 .u-nav-link.active {
   color: var(--palette-4-light-1) !important;
@@ -13505,6 +13643,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-4-light-2,
 a.u-button-style.u-button-style.active > .u-text-active-palette-4-light-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-4-light-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-4-light-2.active,
+.u-text-hover-palette-4-light-2.u-language-url:hover,
+.u-text-hover-palette-4-light-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-4-light-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-4-light-2 .u-nav-link.active {
   color: var(--palette-4-light-2) !important;
@@ -13559,6 +13699,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-4-light-3,
 a.u-button-style.u-button-style.active > .u-text-active-palette-4-light-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-4-light-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-4-light-3.active,
+.u-text-hover-palette-4-light-3.u-language-url:hover,
+.u-text-hover-palette-4-light-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-4-light-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-4-light-3 .u-nav-link.active {
   color: var(--palette-4-light-3) !important;
@@ -13613,6 +13755,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-4-base,
 a.u-button-style.u-button-style.active > .u-text-active-palette-4-base[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-4-base:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-4-base.active,
+.u-text-hover-palette-4-base.u-language-url:hover,
+.u-text-hover-palette-4-base .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-4-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-4-base .u-nav-link.active {
   color: var(--palette-4-base) !important;
@@ -13667,6 +13811,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-5-dark-3,
 a.u-button-style.u-button-style.active > .u-text-active-palette-5-dark-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-5-dark-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-5-dark-3.active,
+.u-text-hover-palette-5-dark-3.u-language-url:hover,
+.u-text-hover-palette-5-dark-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-5-dark-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-5-dark-3 .u-nav-link.active {
   color: var(--palette-5-dark-3) !important;
@@ -13721,6 +13867,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-5-dark-2,
 a.u-button-style.u-button-style.active > .u-text-active-palette-5-dark-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-5-dark-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-5-dark-2.active,
+.u-text-hover-palette-5-dark-2.u-language-url:hover,
+.u-text-hover-palette-5-dark-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-5-dark-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-5-dark-2 .u-nav-link.active {
   color: var(--palette-5-dark-2) !important;
@@ -13775,6 +13923,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-5-dark-1,
 a.u-button-style.u-button-style.active > .u-text-active-palette-5-dark-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-5-dark-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-5-dark-1.active,
+.u-text-hover-palette-5-dark-1.u-language-url:hover,
+.u-text-hover-palette-5-dark-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-5-dark-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-5-dark-1 .u-nav-link.active {
   color: var(--palette-5-dark-1) !important;
@@ -13829,6 +13979,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-5,
 a.u-button-style.u-button-style.active > .u-text-active-palette-5[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-5:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-5.active,
+.u-text-hover-palette-5.u-language-url:hover,
+.u-text-hover-palette-5 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-5 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-5 .u-nav-link.active {
   color: var(--palette-5) !important;
@@ -13883,6 +14035,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-5-light-1,
 a.u-button-style.u-button-style.active > .u-text-active-palette-5-light-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-5-light-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-5-light-1.active,
+.u-text-hover-palette-5-light-1.u-language-url:hover,
+.u-text-hover-palette-5-light-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-5-light-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-5-light-1 .u-nav-link.active {
   color: var(--palette-5-light-1) !important;
@@ -13937,6 +14091,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-5-light-2,
 a.u-button-style.u-button-style.active > .u-text-active-palette-5-light-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-5-light-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-5-light-2.active,
+.u-text-hover-palette-5-light-2.u-language-url:hover,
+.u-text-hover-palette-5-light-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-5-light-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-5-light-2 .u-nav-link.active {
   color: var(--palette-5-light-2) !important;
@@ -13991,6 +14147,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-5-light-3,
 a.u-button-style.u-button-style.active > .u-text-active-palette-5-light-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-5-light-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-5-light-3.active,
+.u-text-hover-palette-5-light-3.u-language-url:hover,
+.u-text-hover-palette-5-light-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-5-light-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-5-light-3 .u-nav-link.active {
   color: var(--palette-5-light-3) !important;
@@ -14045,6 +14203,8 @@ a.u-button-style.u-button-style.active > .u-text-active-palette-5-base,
 a.u-button-style.u-button-style.active > .u-text-active-palette-5-base[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-palette-5-base:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-palette-5-base.active,
+.u-text-hover-palette-5-base.u-language-url:hover,
+.u-text-hover-palette-5-base .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-palette-5-base .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-palette-5-base .u-nav-link.active {
   color: var(--palette-5-base) !important;
@@ -14099,6 +14259,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-dark-3,
 a.u-button-style.u-button-style.active > .u-text-active-grey-dark-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-dark-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-dark-3.active,
+.u-text-hover-grey-dark-3.u-language-url:hover,
+.u-text-hover-grey-dark-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-dark-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-dark-3 .u-nav-link.active {
   color: var(--grey-dark-3) !important;
@@ -14153,6 +14315,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-dark-2,
 a.u-button-style.u-button-style.active > .u-text-active-grey-dark-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-dark-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-dark-2.active,
+.u-text-hover-grey-dark-2.u-language-url:hover,
+.u-text-hover-grey-dark-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-dark-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-dark-2 .u-nav-link.active {
   color: var(--grey-dark-2) !important;
@@ -14207,6 +14371,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-dark-1,
 a.u-button-style.u-button-style.active > .u-text-active-grey-dark-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-dark-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-dark-1.active,
+.u-text-hover-grey-dark-1.u-language-url:hover,
+.u-text-hover-grey-dark-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-dark-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-dark-1 .u-nav-link.active {
   color: var(--grey-dark-1) !important;
@@ -14261,6 +14427,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey,
 a.u-button-style.u-button-style.active > .u-text-active-grey[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey.active,
+.u-text-hover-grey.u-language-url:hover,
+.u-text-hover-grey .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey .u-nav-link.active {
   color: var(--grey) !important;
@@ -14315,6 +14483,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-light-1,
 a.u-button-style.u-button-style.active > .u-text-active-grey-light-1[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-light-1:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-light-1.active,
+.u-text-hover-grey-light-1.u-language-url:hover,
+.u-text-hover-grey-light-1 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-light-1 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-light-1 .u-nav-link.active {
   color: var(--grey-light-1) !important;
@@ -14369,6 +14539,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-light-2,
 a.u-button-style.u-button-style.active > .u-text-active-grey-light-2[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-light-2:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-light-2.active,
+.u-text-hover-grey-light-2.u-language-url:hover,
+.u-text-hover-grey-light-2 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-light-2 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-light-2 .u-nav-link.active {
   color: var(--grey-light-2) !important;
@@ -14423,6 +14595,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-light-3,
 a.u-button-style.u-button-style.active > .u-text-active-grey-light-3[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-light-3:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-light-3.active,
+.u-text-hover-grey-light-3.u-language-url:hover,
+.u-text-hover-grey-light-3 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-light-3 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-light-3 .u-nav-link.active {
   color: var(--grey-light-3) !important;
@@ -14477,6 +14651,8 @@ a.u-button-style.u-button-style.active > .u-text-active-white,
 a.u-button-style.u-button-style.active > .u-text-active-white[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-white:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-white.active,
+.u-text-hover-white.u-language-url:hover,
+.u-text-hover-white .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-white .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-white .u-nav-link.active {
   color: var(--white) !important;
@@ -14531,6 +14707,8 @@ a.u-button-style.u-button-style.active > .u-text-active-black,
 a.u-button-style.u-button-style.active > .u-text-active-black[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-black:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-black.active,
+.u-text-hover-black.u-language-url:hover,
+.u-text-hover-black .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-black .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-black .u-nav-link.active {
   color: var(--black) !important;
@@ -14585,6 +14763,8 @@ a.u-button-style.u-button-style.active > .u-text-active-body-color,
 a.u-button-style.u-button-style.active > .u-text-active-body-color[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-body-color:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-body-color.active,
+.u-text-hover-body-color.u-language-url:hover,
+.u-text-hover-body-color .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-body-color .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-body-color .u-nav-link.active {
   color: var(--body-color) !important;
@@ -14639,6 +14819,8 @@ a.u-button-style.u-button-style.active > .u-text-active-body-alt-color,
 a.u-button-style.u-button-style.active > .u-text-active-body-alt-color[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-body-alt-color:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-body-alt-color.active,
+.u-text-hover-body-alt-color.u-language-url:hover,
+.u-text-hover-body-alt-color .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-body-alt-color .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-body-alt-color .u-nav-link.active {
   color: var(--body-alt-color) !important;
@@ -14693,6 +14875,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-25,
 a.u-button-style.u-button-style.active > .u-text-active-grey-25[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-25:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-25.active,
+.u-text-hover-grey-25.u-language-url:hover,
+.u-text-hover-grey-25 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-25 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-25 .u-nav-link.active {
   color: var(--grey-25) !important;
@@ -14747,6 +14931,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-5,
 a.u-button-style.u-button-style.active > .u-text-active-grey-5[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-5:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-5.active,
+.u-text-hover-grey-5.u-language-url:hover,
+.u-text-hover-grey-5 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-5 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-5 .u-nav-link.active {
   color: var(--grey-5) !important;
@@ -14801,6 +14987,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-10,
 a.u-button-style.u-button-style.active > .u-text-active-grey-10[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-10:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-10.active,
+.u-text-hover-grey-10.u-language-url:hover,
+.u-text-hover-grey-10 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-10 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-10 .u-nav-link.active {
   color: var(--grey-10) !important;
@@ -14855,6 +15043,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-15,
 a.u-button-style.u-button-style.active > .u-text-active-grey-15[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-15:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-15.active,
+.u-text-hover-grey-15.u-language-url:hover,
+.u-text-hover-grey-15 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-15 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-15 .u-nav-link.active {
   color: var(--grey-15) !important;
@@ -14909,6 +15099,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-25,
 a.u-button-style.u-button-style.active > .u-text-active-grey-25[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-25:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-25.active,
+.u-text-hover-grey-25.u-language-url:hover,
+.u-text-hover-grey-25 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-25 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-25 .u-nav-link.active {
   color: var(--grey-25) !important;
@@ -14963,6 +15155,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-30,
 a.u-button-style.u-button-style.active > .u-text-active-grey-30[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-30:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-30.active,
+.u-text-hover-grey-30.u-language-url:hover,
+.u-text-hover-grey-30 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-30 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-30 .u-nav-link.active {
   color: var(--grey-30) !important;
@@ -15017,6 +15211,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-40,
 a.u-button-style.u-button-style.active > .u-text-active-grey-40[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-40:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-40.active,
+.u-text-hover-grey-40.u-language-url:hover,
+.u-text-hover-grey-40 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-40 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-40 .u-nav-link.active {
   color: var(--grey-40) !important;
@@ -15071,6 +15267,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-50,
 a.u-button-style.u-button-style.active > .u-text-active-grey-50[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-50:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-50.active,
+.u-text-hover-grey-50.u-language-url:hover,
+.u-text-hover-grey-50 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-50 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-50 .u-nav-link.active {
   color: var(--grey-50) !important;
@@ -15125,6 +15323,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-60,
 a.u-button-style.u-button-style.active > .u-text-active-grey-60[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-60:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-60.active,
+.u-text-hover-grey-60.u-language-url:hover,
+.u-text-hover-grey-60 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-60 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-60 .u-nav-link.active {
   color: var(--grey-60) !important;
@@ -15179,6 +15379,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-70,
 a.u-button-style.u-button-style.active > .u-text-active-grey-70[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-70:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-70.active,
+.u-text-hover-grey-70.u-language-url:hover,
+.u-text-hover-grey-70 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-70 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-70 .u-nav-link.active {
   color: var(--grey-70) !important;
@@ -15233,6 +15435,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-75,
 a.u-button-style.u-button-style.active > .u-text-active-grey-75[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-75:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-75.active,
+.u-text-hover-grey-75.u-language-url:hover,
+.u-text-hover-grey-75 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-75 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-75 .u-nav-link.active {
   color: var(--grey-75) !important;
@@ -15287,6 +15491,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-80,
 a.u-button-style.u-button-style.active > .u-text-active-grey-80[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-80:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-80.active,
+.u-text-hover-grey-80.u-language-url:hover,
+.u-text-hover-grey-80 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-80 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-80 .u-nav-link.active {
   color: var(--grey-80) !important;
@@ -15341,6 +15547,8 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-90,
 a.u-button-style.u-button-style.active > .u-text-active-grey-90[class*="u-border-"],
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-text-hover-grey-90:hover,
 :not(.level-2) > .u-nav > .u-nav-item > a.u-nav-link.u-nav-link.u-text-active-grey-90.active,
+.u-text-hover-grey-90.u-language-url:hover,
+.u-text-hover-grey-90 .u-language-url:hover,
 .u-popupmenu-items.u-text-hover-grey-90 .u-nav-link:hover,
 .u-popupmenu-items.u-popupmenu-items.u-text-active-grey-90 .u-nav-link.active {
   color: var(--grey-90) !important;

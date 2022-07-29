@@ -146,7 +146,9 @@ class NpSavePageAction extends NpAction {
         $publishHeaderFooter = NpSavePageAction::saveHeaderFooter($data_provider, $fullRequest);
 
         $publish_html = _arr($data, 'publishHtml', '');
+        $publish_html_translations = _arr($data, 'publishHtmlTranslations', array());
         $data_provider->setPagePublishHtml($publish_html);
+        $data_provider->setPagePublishHtmlTranslations($publish_html_translations);
         $data_provider->setPageHtml(_arr($data, 'html', ''));
         $data_provider->setPageHead(_arr($data, 'head', ''));
         $data_provider->setPageBodyClass(_arr($data, 'bodyClass', ''));
@@ -182,9 +184,8 @@ class NpSavePageAction extends NpAction {
             }
         }
 
-        $passwordProtection = $data_provider->getPasswordProtectionData();
-        if ($passwordProtection) {
-            $passwordProtectionItem = json_decode($passwordProtection, true);
+        $passwordProtectionItem = $data_provider->getPasswordProtectionData();
+        if ($passwordProtectionItem) {
             $publish_html .= $passwordProtectionItem['php'];
         }
 
@@ -377,11 +378,20 @@ class NpSavePageAction extends NpAction {
             $data_provider->setNpHeader($result['header']);
             NpForms::updateForms(0, 'header', $data['publishHeader']);
         }
+        if (isset($data['publishHeaderTranslations'])) {
+            foreach ($data['publishHeaderTranslations'] as $lang => $translation) {
+                $data_provider->setTranslation($translation, 'header', $lang);
+            }
+        }
         if ($result['footer'] !== "") {
             $data_provider->setNpFooter($result['footer']);
             NpForms::updateForms(0, 'footer', $data['publishFooter']);
         }
-
+        if (isset($data['publishFooterTranslations'])) {
+            foreach ($data['publishFooterTranslations'] as $lang => $translation) {
+                $data_provider->setTranslation($translation, 'footer', $lang);
+            }
+        }
         return $publishHeaderFooter;
     }
 }

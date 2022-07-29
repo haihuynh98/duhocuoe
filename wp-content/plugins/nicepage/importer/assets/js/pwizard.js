@@ -82,10 +82,24 @@ var Pwizard = (function($){
             pAction = pwizard_params.actionReplaceContent
         }
 
+        function stopWithError(msg) {
+            $('.pwizard-wrap')
+                .removeClass('spinning')
+                .html(`<p>Failed to import content. An error occurred: <span style="color: red;">${msg}</span></p>`);
+        }
+
         doAjax(pAction, pwizard_params.urlContent, pwizard_params.wpnonceContent).done(function (response) {
+            if (response && response.indexOf('{') === 0) {
+                let responseOptions = JSON.parse(response)
+                if (responseOptions && responseOptions.error) {
+                    stopWithError(responseOptions.error);
+                }
+            }
             complete();
-        }).fail(function () {
-            console.log('An error occurred while importing.');
+        }).fail(function (xhr, status, error) {
+            if (error) {
+                stopWithError(error);
+            }
         });
 
         return {

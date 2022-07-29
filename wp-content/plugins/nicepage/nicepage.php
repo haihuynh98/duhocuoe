@@ -4,7 +4,7 @@ Plugin Name: Nicepage
 Plugin URI: https://nicepage.com/
 Description: Design websites with any images and texts in seconds!
 Text Domain: nicepage
-Version: 4.12.14
+Version: 4.15.8
 Author: Nicepage https://www.nicepage.com
 Author URI: https://nicepage.com/
 */
@@ -46,6 +46,7 @@ if (!file_exists(ABSPATH . 'wp-content/plugins/' . $active_folder_name) OR $acti
     include_once dirname(__FILE__) . '/importer/class-np-import.php';
     include_once dirname(__FILE__) . '/includes/class-np-settings.php';
     include_once dirname(__FILE__) . '/includes/class-np-role-manager.php';
+    include_once dirname(__FILE__) . '/includes/translations/class-np-multi-languages.php';
     include_once dirname(__FILE__) . '/updater/class-np-updater.php';
     register_deactivation_hook(__FILE__, 'NpImportNotice::addImportNoticeOption');
     register_deactivation_hook(__FILE__, 'NpImportNotice::removePluginDatabaseTable');

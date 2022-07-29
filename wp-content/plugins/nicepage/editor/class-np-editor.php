@@ -38,7 +38,7 @@ class NpEditor {
      * @return string
      */
     public static function getAppLink($args = array()) {
-        $return = add_query_arg(array('page' => 'np_app'), admin_url() . 'edit.php?post_type=page&ver=' . urlencode('1654862167124'));
+        $return = add_query_arg(array('page' => 'np_app'), admin_url() . 'edit.php?post_type=page&ver=' . urlencode('4.15.8'));
 
         $domain = _arr($args, 'domain', NpEditor::getDomain());
         if ($domain) {

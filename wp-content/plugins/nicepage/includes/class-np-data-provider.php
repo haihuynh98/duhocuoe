@@ -10,6 +10,7 @@ class NpDataProvider {
     public $page_id;
     public $preview;
     public $saveAndPublish;
+    public $language;
 
     /**
      * NpDataProvider constructor.
@@ -20,6 +21,7 @@ class NpDataProvider {
      */
     public function __construct($page_id = 0, $preview = null, $saveAndPublish = true) {
         $this->page_id = $page_id;
+        $this->language = isset($_GET['lang']) ? $_GET['lang'] : false;
 
         if (is_bool($preview)) {
             $this->preview = $preview;
@@ -148,8 +150,9 @@ class NpDataProvider {
         $content = get_option('passwordProtectNp');
         if ($content) {
             $content = $this->fixImagePaths($content);
+            return json_decode($content, true);
         }
-        return $content;
+        return '';
     }
 
     /**
@@ -158,7 +161,7 @@ class NpDataProvider {
      * @param string $data
      */
     public function setPasswordProtectionData($data) {
-        update_option('passwordProtectNp', $data);
+        update_option('passwordProtectNp', json_encode($data));
     }
 
     /**
@@ -176,6 +179,38 @@ class NpDataProvider {
             $content = preg_replace('/data-password="[\s\S]*?"/', 'data-password="' . $passwordProtection . '"', $content);
         }
         return $content;
+    }
+
+    /**
+     * Get header/footer/passwordProtect translations
+     *
+     * @param $item
+     * @param $name
+     *
+     * @return string
+     */
+    public function getTranslation($item, $name) {
+        $content = $item['php'];
+        if ($this->language) {
+            $optionName = $this->language . '_' . $name . 'Np';
+            if (get_option($optionName)) {
+                $content = get_option($optionName);
+            }
+        }
+        $content = $this->fixImagePaths($content);
+        return $content;
+    }
+
+    /**
+     * Get header/footer/passwordProtect translations
+     *
+     * @param $html
+     * @param $name
+     * @param $lang
+     */
+    public function setTranslation($html, $name, $lang) {
+        $optionName = $lang . '_' . $name . 'Np';
+        update_option($optionName, $html);
     }
 
     /**
@@ -337,7 +372,14 @@ class NpDataProvider {
      * @return string
      */
     public function getPagePublishHtml() {
-        $return = $this->_getPostMeta('_np_publish_html');
+        $meta_name = '_np_publish_html';
+        global $post;
+        if ($this->language) {
+            if (metadata_exists('post', $post->ID, $this->language . '_np_publish_html')) {
+                $meta_name = $this->language . '_np_publish_html';
+            }
+        }
+        $return = $this->_getPostMeta($meta_name);
         $return = $this->fixImagePaths($return);
         return $return ? $return : '';
     }
@@ -351,6 +393,21 @@ class NpDataProvider {
         $html = $this->replaceImagePaths($html);
         $html = wp_encode_emoji($html);
         $this->_updatePostMeta('_np_publish_html', $html);
+    }
+
+    /**
+     * Set page publish-html translations
+     *
+     * @param array $publish_html_translations
+     */
+    public function setPagePublishHtmlTranslations($publish_html_translations) {
+        if ($publish_html_translations) {
+            foreach ($publish_html_translations as $lang => $publish_html_translation) {
+                $publish_html_translation = $this->replaceImagePaths($publish_html_translation);
+                $publish_html_translation = wp_encode_emoji($publish_html_translation);
+                $this->_updatePostMeta($lang . '_np_publish_html', $publish_html_translation);
+            }
+        }
     }
 
     /**
@@ -1029,6 +1086,16 @@ VARS;
         if (isset($settings['disableOpenGraph']) && $settings['disableOpenGraph']) {
             $enableOpenGraph = $settings['disableOpenGraph'] === 'true' ? 0 : 1;
             set_theme_mod('seo_og', $enableOpenGraph);
+        }
+        if (isset($settings['langs'])) {
+            $supported_langs = array();
+            foreach ($settings['langs'] as $lang) {
+                $supported_langs[] = $lang['name'];
+            }
+            update_option('np_supported_langs', json_encode($supported_langs));
+        }
+        if (isset($settings['lang'])) {
+            update_option('np_default_lang', $settings['lang']);
         }
         update_option('np_hide_backlink', _arr($settings, 'showBrand') === 'false');
         NpMeta::update('site_settings', wp_json_encode($settings));

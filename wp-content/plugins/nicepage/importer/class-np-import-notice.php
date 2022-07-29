@@ -133,6 +133,21 @@ class NpImportNotice {
     }
 
     /**
+     * Get php errors when failed import content
+     *
+     * @return string
+     */
+    public static function getResponseOptions() {
+        $data = json_decode(get_option('np_captcha_keys_options', ''), true);
+        $error_data = get_option('np_error_import');
+        if ($error_data) {
+            $error_data = json_decode($error_data, true);
+            $data = array_merge($data, $error_data);
+        }
+        return json_encode($data);
+    }
+
+    /**
      * Action on wp_ajax_np_import_content
      * Action to import content
      */
@@ -140,7 +155,7 @@ class NpImportNotice {
         check_ajax_referer('np-importer');
         self::_importData(false);
         update_option('content_import_from_theme', 'ok');
-        echo get_option('np_captcha_keys_options', '');
+        echo self::getResponseOptions();
         exit;
     }
 
@@ -152,7 +167,7 @@ class NpImportNotice {
         check_ajax_referer('np-importer');
         self::_importData(true);
         update_option('content_import_from_theme', 'ok');
-        echo get_option('np_captcha_keys_options', '');
+        echo self::getResponseOptions();
         exit;
     }
 

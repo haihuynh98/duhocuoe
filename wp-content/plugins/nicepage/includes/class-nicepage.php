@@ -827,7 +827,7 @@ SCRIPT;
      * @return mixed
      */
     public static function processControls($content) {
-        $controls = array('headline', 'logo', 'menu', 'search', 'position', 'headerImage', 'widget', 'shortCode', 'login');
+        $controls = array('headline', 'logo', 'menu', 'search', 'position', 'headerImage', 'widget', 'shortCode', 'login', 'languageLink');
         foreach ($controls as $value) {
             self::$controlName = $value;
             $content =  preg_replace_callback(
@@ -1025,10 +1025,9 @@ SCRIPT;
 SCRIPT;
         $post_id = isset($post->ID) ? $post->ID : 0;
         $data_provider = np_data_provider($post_id);
-        $passwordProtection = $data_provider->getPasswordProtectionData();
-        if ($passwordProtection) {
-            $passwordProtectionItem = json_decode($passwordProtection, true);
-            $publishPasswordProtection = $passwordProtectionItem['php'];
+        $passwordProtectionItem = $data_provider->getPasswordProtectionData();
+        if ($passwordProtectionItem) {
+            $publishPasswordProtection = $data_provider->getTranslation($passwordProtectionItem, 'passwordProtect');
             $publishPasswordProtection = Nicepage::processFormCustomPhp($publishPasswordProtection, false);
             $publishPasswordProtection = Nicepage::processContent($publishPasswordProtection);
             $action = APP_PLUGIN_URL . 'includes/templates/passwordProtect/action.php';

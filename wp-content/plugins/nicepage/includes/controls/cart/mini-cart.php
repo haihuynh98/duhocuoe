@@ -5,7 +5,7 @@ $post_id = get_the_ID();
 $data_provider = np_data_provider($post_id);
 $headerNp = $data_provider->getNpHeader();
 $headerItem = json_decode($headerNp, true);
-$publishHeader = $headerItem['php'];
+$publishHeader = $data_provider->getTranslation($headerItem, 'header');
 if (preg_match('/<\!--shopping_cart-->([\s\S]+?)<\!--\/shopping_cart-->/', $publishHeader, $matches)) {
     $shoppingCartHtml = $matches[1];
 

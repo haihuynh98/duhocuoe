@@ -4717,7 +4717,7 @@ class FormMail extends PHPMailer
             return false;
         }
 
-        if ($this->addReplyTo($replyTo) === false)
+        if ($replyTo && $this->addReplyTo($replyTo) === false)
         {
             return false;
         }
@@ -4725,7 +4725,7 @@ class FormMail extends PHPMailer
         // Add sender to replyTo only if no replyTo received
         $autoReplyTo = (empty($this->ReplyTo)) ? true : false;
 
-        if (parent::setFrom($from, '', $autoReplyTo) === false)
+        if ($from && parent::setFrom($from, '', $autoReplyTo) === false)
         {
             return false;
         }

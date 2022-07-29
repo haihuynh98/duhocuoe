@@ -34,7 +34,7 @@ ob_start();
     <?php $headerItem = '';
     if ($headerNp && !$data_provider->getHideHeader()) {
         $headerItem = json_decode($headerNp, true);
-        $publishHeader = $headerItem['php'];
+        $publishHeader = $data_provider->getTranslation($headerItem, 'header');
         $publishHeader = Nicepage::processFormCustomPhp($publishHeader, 'header');
         $publishHeader = Nicepage::processContent($publishHeader, true, 'header');
     }
@@ -50,7 +50,7 @@ ob_start();
     $footerItem = '';
     if ($footerNp && !$data_provider->getHideFooter()) {
         $footerItem = json_decode($footerNp, true);
-        $publishFooter = $footerItem['php'];
+        $publishFooter = $data_provider->getTranslation($footerItem, 'footer');
         $publishFooter = Nicepage::processFormCustomPhp($publishFooter, 'footer');
         $publishFooter = Nicepage::processContent($publishFooter, true, 'footer');
     }

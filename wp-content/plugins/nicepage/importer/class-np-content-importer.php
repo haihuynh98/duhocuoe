@@ -283,6 +283,15 @@ class NpContentImporter {
                     $update_data['post_content'] = apply_filters('np_create_excerpt', $np_publish_html);
                 }
 
+                $np_publish_html_translations = _arr($np_data, 'publishHtmlTranslations');
+                if ($np_publish_html_translations) {
+                    foreach ($np_publish_html_translations as $lang => $np_publish_html_translation) {
+                        $np_publish_html_translation = $data_provider->replaceImagePaths($np_publish_html_translation);
+                        $np_publish_html_translation = $this->_processContent($np_publish_html_translation);
+                        update_post_meta($post_id, $lang . '_np_publish_html', $np_publish_html_translation);
+                    }
+                }
+
                 $np_head = _arr($np_data, 'head');
                 if ($np_head) {
                     $np_head = $data_provider->replaceImagePaths($np_head);
@@ -898,6 +907,12 @@ class NpContentImporter {
             }
             update_option('headerNp', json_encode($header));
         }
+        if (isset($data['headerTranslations'])) {
+            foreach ($data['headerTranslations'] as $lang => $headerTranslation) {
+                $headerTranslation = $this->_processContent($headerTranslation, $onlyHeaderFooter);
+                update_option($lang . '_' . 'headerNp', $headerTranslation);
+            }
+        }
         if (isset($data['footer'])) {
             $footer = $data['footer'];
             $footer['php'] = $this->_processContent($footer['php'], $onlyHeaderFooter);
@@ -910,6 +925,12 @@ class NpContentImporter {
             }
             update_option('footerNp', json_encode($footer));
         }
+        if (isset($data['footerTranslations'])) {
+            foreach ($data['footerTranslations'] as $lang => $footerTranslation) {
+                $footerTranslation = $this->_processContent($footerTranslation, $onlyHeaderFooter);
+                update_option($lang . '_' . 'footerNp', $footerTranslation);
+            }
+        }
 
         $publishPasswordProtection = '';
         if (isset($data['password'])) {
@@ -918,7 +939,13 @@ class NpContentImporter {
             $password['html'] = $this->_processContent($password['html'], $onlyHeaderFooter);
             $password['styles'] = $this->_processContent($password['styles'], $onlyHeaderFooter);
             $publishPasswordProtection .= $password['html'];
-            update_option('passwordProtectNp', json_encode($password));
+            $data_provider->setPasswordProtectionData($password);
+        }
+        if (isset($data['passwordTranslations'])) {
+            foreach ($data['passwordTranslations'] as $lang => $passwordTranslation) {
+                $passwordTranslation = $this->_processContent($passwordTranslation, $onlyHeaderFooter);
+                update_option($lang . '_' . 'passwordProtectNp', $passwordTranslation);
+            }
         }
         if ($publishPasswordProtection) {
             $headerFooterHtml .= $publishPasswordProtection;
@@ -1071,8 +1098,18 @@ class NpContentImporter {
      * @param bool   $remove_previously_content Do we need to remove previously imported content?
      */
     public static function doImportAction($content_dir, $remove_previously_content) {
-        $import = new self($content_dir);
-        $import->import($remove_previously_content);
+        $error_data = '';
+        try {
+            $import = new self($content_dir);
+            $import->import($remove_previously_content);
+        } catch (Exception $e) {
+            $error_data = json_encode(
+                array (
+                    'error' => $e->getMessage()
+                )
+            );
+        }
+        update_option('np_error_import', $error_data);
     }
 }
 
