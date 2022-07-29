@@ -62,7 +62,8 @@ $description = get_the_archive_description();
 
         </div>
         <div class="col-lg-3 col-12 sidebar-post">
-            <?php echo get_template_part('template-parts/sidebar/sidebar-post-popular'); ?>
+            <?php echo get_template_part( 'template-parts/sidebar/sidebar-schools-majors');?>
+            <?php echo get_template_part( 'template-parts/sidebar/sidebar-post-popular' );?>
         </div>
     </div>
 </div>

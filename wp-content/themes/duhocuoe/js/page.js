@@ -13,7 +13,6 @@
             $(this).width(contentWidth);
             $(this).css({"display":"block", "overflow":"scroll"});
         }
-        console.log($(this).width());
     })
 
 })(jQuery);

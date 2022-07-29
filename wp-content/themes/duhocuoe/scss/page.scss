@@ -23,17 +23,20 @@ body {
 }
 
 #sidebar-posts-popular {
-  padding-top: 20px;
+  margin-top: 20px;
 
   ul {
     list-style: none;
   }
+
   li {
     list-style: none;
   }
+
   h5 {
     margin: 0;
   }
+
   h3 {
     color: #2996bd;
     margin: 10px 0px 15px;
@@ -42,14 +45,17 @@ body {
     border-left: 5px solid #32aae1;
     font-size: 26px;
   }
+
   .sidebar.widget {
     background: #f2f2f2;
     border: 1px solid #ddd;
     padding: 10px 20px;
+
     ul {
       margin: 0px;
       padding: 0;
       overflow: hidden;
+
       li {
         overflow: hidden;
         font-size: 14px;
@@ -59,10 +65,12 @@ body {
       }
     }
   }
+
   .sidebar-thumb {
     float: left;
     overflow: hidden;
     margin-right: 15px;
+
     img {
       background: #fff;
       border: 1px dashed #e0e0e0;
@@ -75,16 +83,20 @@ body {
 
     }
   }
+
   .sidebar-content {
     height: 75px;
+
     h5 {
       font-size: 16px;
       cursor: pointer;
       line-height: 24px;
+
       a {
         &:hover {
           color: #2996bd;
         }
+
         color: #202020;
         outline: 0 none;
         text-decoration: none;
@@ -93,14 +105,18 @@ body {
       }
     }
   }
+
   .sidebar-meta {
     margin-top: 10px;
+
     span {
       color: #2e2e2e;
+
       i {
         color: #2996bd;
       }
     }
+
     span.time {
       margin-right: 10px;
     }
@@ -128,5 +144,82 @@ body {
 
   .breadcrumb_last {
     font-style: italic;
+  }
+}
+
+.tab-schools-majors {
+  margin-top: 20px;
+  background-color: #f2f2f2;
+
+  ul.nav-tabs {
+    margin: 0px;
+
+    li {
+      flex: 50%;
+
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      width: 100%;
+      padding: 10px;
+      color: black;
+      background-color: #ffffff;
+
+      &.active {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+
+  .tab-content {
+    width: 100%;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      width: 100%;
+      max-height: 350px;
+      overflow-y: scroll;
+
+      /* width */
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #fff;
+      }
+
+      li {
+
+        width: 100%;
+
+        a {
+          padding: 10px 10px 0 10px;
+          text-decoration: none;
+          display: block;
+          width: 100%;
+          transition: 0.5s;
+
+          &:hover {
+            background-color: white;
+          }
+        }
+
+        &:last-child {
+          a {
+            padding: 10px 10px 10px 10px;
+          }
+        }
+      }
+    }
   }
 }

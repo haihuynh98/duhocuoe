@@ -14,20 +14,21 @@ get_header();
 $description = get_the_archive_description();
 ?>
 
-<?php if (have_posts()) : ?>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 col-12 left-col">
 
-                <section class="article-list">
-                    <div class="container">
-                        <div class="intro">
-                            <?php the_archive_title('<h3 class="text-center title-page">', '</h3>'); ?>
-                            <?php if ($description) : ?>
-                                <p class="text-center archive-description"><?php echo wp_kses_post(wpautop($description)); ?></p>
-                            <?php endif; ?>
-                        </div>
-                        <div class="row articles archive">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9 col-12 left-col">
+
+            <section class="article-list">
+                <div class="container">
+                    <div class="intro">
+                        <?php the_archive_title('<h3 class="text-center title-page">', '</h3>'); ?>
+                        <?php if ($description) : ?>
+                            <p class="text-center archive-description"><?php echo wp_kses_post(wpautop($description)); ?></p>
+                        <?php endif; ?>
+                    </div>
+                    <div class="row articles archive">
+                        <?php if (have_posts()) : ?>
                             <?php while (have_posts()) : ?>
                                 <?php the_post(); ?>
 
@@ -45,19 +46,21 @@ $description = get_the_archive_description();
                                     </a>
                                 </div>
                             <?php endwhile; ?>
-                        </div>
-                        <!--                        --><?php //twenty_twenty_one_the_posts_navigation(); ?>
+                        <?php else: ?>
+                            <p>Không có bài viết ở danh mục này</p>
+                        <?php endif; ?>
                     </div>
-                </section>
+                    <!--                        --><?php //twenty_twenty_one_the_posts_navigation(); ?>
+                </div>
+            </section>
 
-            </div>
-            <div class="col-lg-3 col-12 sidebar-post">
-                <?php echo get_template_part('template-parts/sidebar/sidebar-post-popular'); ?>
-            </div>
+        </div>
+        <div class="col-lg-3 col-12 sidebar-post">
+            <?php echo get_template_part('template-parts/sidebar/sidebar-schools-majors'); ?>
+            <?php echo get_template_part('template-parts/sidebar/sidebar-post-popular'); ?>
         </div>
     </div>
-
-<?php endif; ?>
+</div>
 
 <?php get_footer(); ?>
 

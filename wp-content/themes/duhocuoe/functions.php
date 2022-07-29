@@ -1281,6 +1281,7 @@ function is_not_post_template($post)
 function load_css_js()
 {
     wp_enqueue_style('boostrap-style', get_template_directory_uri() . '/boostrap/bootstrap.min.css', [], false);
+    wp_enqueue_script('boostrap-script', get_template_directory_uri() . '/boostrap/bootstrap.min.js', null, null, true);
     wp_enqueue_style('product', get_template_directory_uri() . '/css/_product.css', [], false);
     wp_enqueue_style('style-nice', get_template_directory_uri() . '/css/nicepage.css', [], false);
     wp_enqueue_style('home', get_template_directory_uri() . '/css/home.css', [], false);
@@ -1295,7 +1296,7 @@ function load_css_js()
         wp_enqueue_style("contact-page");
     }
     if (is_page() || is_single() || is_archive() || is_search()) {
-        wp_enqueue_style('page', get_template_directory_uri() . '/css/page.css');
+        wp_enqueue_style('page', get_template_directory_uri() . '/css/page.min.css');
         wp_enqueue_script('page', get_template_directory_uri() . '/js/page.js', null, null, true);
     }
     if (is_archive()) {
@@ -1315,7 +1316,8 @@ function load_css_js()
 
         wp_enqueue_script('swiper-post-scholarship', get_template_directory_uri() . '/js/swiper-post-scholarship.js', null, null, true);
         wp_enqueue_script('swiper-post-popular', get_template_directory_uri() . '/js/swiper-post-popular.js', null, null, true);
-        wp_enqueue_script('swiper-event', get_template_directory_uri() . '/js/swiper-event.js', null, null, true);        wp_enqueue_script('search-page', get_template_directory_uri() . '/js/search-page.js', null, null, true);
+        wp_enqueue_script('swiper-event', get_template_directory_uri() . '/js/swiper-event.js', null, null, true);
+        wp_enqueue_script('search-page', get_template_directory_uri() . '/js/search-page.js', null, null, true);
         wp_enqueue_script('search-page', get_template_directory_uri() . '/js/search-page.js', null, null, true);
 
     }
@@ -1341,7 +1343,10 @@ function wp_noshor_redefine_locale($locale)
     if (is_admin()):
         switch_to_locale('en_US');
     endif;
+
 }
 
 add_filter('init', 'wp_noshor_redefine_locale');
+
+
 
