@@ -1348,5 +1348,36 @@ function wp_noshor_redefine_locale($locale)
 
 add_filter('init', 'wp_noshor_redefine_locale');
 
+// Check not exists term then create new term to category
+function tg_insert_category()
+{
+    if (is_admin()){
+        $taxonomy = 'category';
+        if (is_null(term_exists('truong',$taxonomy))) {
+            wp_insert_term(
+                'Trường',   // the term
+                $taxonomy, // the taxonomy
+                array(
+                    'description' => 'Danh sách các trường',
+                    'slug'        => 'truong',
+                )
+            );
+        }
+
+        if (is_null(term_exists('nganh-hoc',$taxonomy))) {
+            wp_insert_term(
+                'Ngành học',   // the term
+                $taxonomy, // the taxonomy
+                array(
+                    'description' => 'danh sách các ngành học',
+                    'slug'        => 'nganh-hoc',
+                )
+            );
+        }
+    }
+}
+
+add_filter('init', 'tg_insert_category');
+
 
 
