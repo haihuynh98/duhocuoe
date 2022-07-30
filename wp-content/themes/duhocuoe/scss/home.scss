@@ -6,6 +6,10 @@ section#about {
   background-size: cover;
   background-position: bottom;
 
+  @media screen and (max-width: 425px) {
+    padding-top: 75px;
+  }
+
   p {
     font-size: 18px;
   }

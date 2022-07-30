@@ -91,8 +91,8 @@ get_header();
     <section id="about" class="about"
              style="background-image: url('/wp-content/themes/duhocuoe/images/banner-section-1.png')">
         <div class="container">
-            <h3 class="text-white">CHÀO MỪNG ĐẾN VỚI LIÊN HIỆP GIÁO DỤC ĐẠI DƯƠNG</h3>
-            <h2>CÔNG TY LIÊN HỆ GIÁO DỤC ĐẠI DƯƠNG - UOE</h2>
+            <h4 class="text-white">CHÀO MỪNG ĐẾN VỚI LIÊN HIỆP GIÁO DỤC ĐẠI DƯƠNG</h4>
+            <h2>CÔNG TY LIÊN HIỆP GIÁO DỤC ĐẠI DƯƠNG - UOE</h2>
             <p class="text-white">Công ty Liên Hiệp Giáo Dục Đại Dương – Du học UOE được thành lập vào năm 2013 bởi
                 những tư vấn viên từng sinh sống và làm việc tại các quốc gia như Nhật Bản, Đài Loan, Mỹ.</p>
             <p class="text-white">Với slogan “Nơi gửi gắm ước mơ du học”, du học UOE đã và đang là cầu nối cho các bạn
