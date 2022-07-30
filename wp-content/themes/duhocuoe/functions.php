@@ -1304,8 +1304,7 @@ function load_css_js()
     }
     if (is_home()) {
         wp_enqueue_style('swiper', get_template_directory_uri() . '/swiper/swiper-bundle.min.css');
-        wp_enqueue_style('home', get_template_directory_uri() . '/css/home.css');
-        wp_enqueue_style('swiper-style', get_template_directory_uri() . '/css/swiper-home.css');
+        wp_enqueue_style('swiper-style', get_template_directory_uri() . '/css/swiper-home.min.css');
         wp_enqueue_style('swiper-post-scholarship-style', get_template_directory_uri() . '/css/swiper-post-scholarship.css');
         wp_enqueue_style('swiper-post-popular-style', get_template_directory_uri() . '/css/swiper-post-popular.css');
         wp_enqueue_style('section-event', get_template_directory_uri() . '/css/swiper-event.css');
