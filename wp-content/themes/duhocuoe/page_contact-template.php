@@ -1,13 +1,8 @@
 <?php
 
-/**
- * Template Name: Contact template
- * Template Post Type: page
- *
- * @package WordPress
- * @subpackage mnconcept
- * @since TigerGentlemen
- */
+/*
+Template Name: Contact template
+*/
 get_header();
 
 $pageID = get_the_ID();
