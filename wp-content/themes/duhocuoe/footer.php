@@ -56,6 +56,29 @@ if (!$hideFooter) { ?>
             </div>
         </div>
     </section>
+    <section class="address-footer" id="address_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 address-col">
+                    <h3>Trụ sở chính TP. Hồ Chí Minh</h3>
+                    <p>15C đường Cao Thắng, phường 2, quận 3, TPHCM</p>
+                    <p>Hotline: <a href="tel:0911470606">0911 47 0606</a></p>
+                    <p>Email: <a href="mailto:duhocuoe@gmail.com">duhocuoe@gmail.com</a></p>
+                    <p class="hide-mobile">Zalo: <a href="https://chat.zalo.me/?phone=0934155606" target="_blank">0934155606</a></p>
+                    <p class="hide-pc">Zalo: <a href="https://zalo.me/0934155606" target="_blank">0934155606</a></p>
+                </div>
+                <div class="col-6 address-col">
+                    <h3>Văn phòng TP. Hồ Chí Minh</h3>
+                    <p>Tòa nhà La Bonita, 215 Nguyễn Gia Trí, phường 25, quận Bình Thạnh, TPHCM</p>
+                    <p>Tel: <a href="tel:02838327986">(028) 38.32.79.86</a></p>
+                    <p>Hotline: <a href="tel:0911750606">0911 75 0606</a></p>
+                    <p>Email: <a href="mailto:duhocuoe@gmail.com">duhocuoe@gmail.com</a></p>
+                    <p class="hide-mobile">Zalo: <a href="https://chat.zalo.me/?phone=0941579922" target="_blank">0941579922</a></p>
+                    <p class="hide-pc">Zalo: <a href="https://zalo.me/0941579922" target="_blank">0941579922</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="main-footer" id="main_footer">
         <div class="container">
             <p class="text-center">Copyright © 2020 CÔNG TY LIÊN HIỆP GIÁO

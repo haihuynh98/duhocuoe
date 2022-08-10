@@ -84,4 +84,48 @@ section.footer-form {
   font-size: 14px;
   padding-top: 20px;
   padding-bottom: 20px;
+  p, a {
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+section.address-footer {
+  .address-col {
+    h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px;
+      color: #1c1c1c;
+    }
+
+    p {
+      display: block;
+      font-size: 15px;
+      color: #313131;
+      margin: 10px 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .hide-mobile {
+      display: none;
+    }
+
+    @media only screen and (hover: none) and (pointer: coarse){
+      .hide-mobile {
+        display: block;
+      }
+
+      .hide-pc {
+        display: none;
+      }
+    }
+  }
 }
