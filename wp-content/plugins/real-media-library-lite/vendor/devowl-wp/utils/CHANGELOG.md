@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.12.14 (2022-08-29)
+
+
+### chore
+
+* introduce devowl-scripts binary (CU-2n41u7h)
+* introduce for non-flat node_modules development experience (CU-2n41u7h)
+* prepare packages for PNPM isolated module mode (CU-2n41u7h)
+* reduce bundle size by removing some vendor files (CU-2d8dedh)
+
+
+### fix
+
+* caching issues with consent history dialog (CU-2vqu2gd)
+
+
+### perf
+
+* drop IE support completely (CU-f72yna)
+* permit process.env destructuring to save kb in bundle size (CU-f72yna)
+
+
+### refactor
+
+* use browsers URL implementation instead of url-parse (CU-f72yna)
+
+
+
+
+
+## 1.12.13 (2022-08-09)
+
+
+### fix
+
+* do not defer stylesheets as this is not valid HTML (CU-2rwa0c3)
+
+
+
+
+
 ## 1.12.12 (2022-06-13)
 
 

@@ -144,8 +144,11 @@ trait Assets {
                 )
             );
         }
-        if ($features === null || \in_array(self::$ADVANCED_ENQUEUE_FEATURE_DEFER, $features, \true)) {
-            $this->enableDeferredEnqueue($handles, $type);
+        if (
+            ($features === null || \in_array(self::$ADVANCED_ENQUEUE_FEATURE_DEFER, $features, \true)) &&
+            $type === 'script'
+        ) {
+            $this->enableDeferredEnqueue($handles);
         }
         if ($features === null || \in_array(self::$ADVANCED_ENQUEUE_FEATURE_PRELOADING, $features, \true)) {
             $this->enablePreloadEnqueue($handles, $type);
@@ -155,25 +158,20 @@ trait Assets {
         }
     }
     /**
-     * Enable `defer` attribute for given handle(s).
+     * Enable `defer` attribute for given handle(s) (only scripts are supported, see https://stackoverflow.com/a/25890780).
      *
      * @param string|string[] $handles
-     * @param string $type Can be `script` or `style`
      * @see https://stackoverflow.com/a/56128726/5506547
      */
-    public function enableDeferredEnqueue($handles, $type = 'script') {
+    public function enableDeferredEnqueue($handles) {
         $handles = \is_array($handles) ? $handles : [$handles];
         add_filter(
-            \sprintf('%s_loader_tag', $type),
-            function ($tag, $handle) use ($handles, $type) {
+            'script_loader_tag',
+            function ($tag, $handle) use ($handles) {
                 if (\in_array($handle, $handles, \true) && \stripos($tag, 'defer') === \false) {
                     // see https://regex101.com/r/0whi5s/1
                     // phpcs:disable PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed
-                    return \preg_replace(
-                        \sprintf('/(%s=[\'"]?)/m', $type === 'script' ? 'src' : 'href'),
-                        'defer $1',
-                        $tag
-                    );
+                    return \preg_replace(\sprintf('/(%s=[\'"]?)/m', 'src'), 'defer $1', $tag);
                     // phpcs:enable PHPCompatibility.ParameterValues.RemovedPCREModifiers.Removed
                 }
                 return $tag;

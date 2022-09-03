@@ -12,13 +12,19 @@
 </div><!-- #content -->
 <?php global $hideFooter;
 if (!$hideFooter) { ?>
-    <section class="footer-form" id="footer-form"
+    <section class="footer-form" id="footer_form"
              style="background-image: url('/wp-content/themes/duhocuoe/images/background-section-1.png')">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-12">
                     <h3 class="section-title">ĐĂNG KÝ TƯ VẤN</h3>
-                    <form action="/" name="advise-form" id="advise_form" class="advise-form">
+                    <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" name="advise-form"
+                          id="advise_form" class="advise-form" method="POST">
+
+                        <input type="hidden" name="action" value="dangkytuvan">
+                        <input type="hidden" name="at_section" value="footer_form">
+                        <input type="hidden" name="prelink"
+                               value="<?php echo '//' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>">
                         <div class="row">
                             <div class="col-6">
                                 <input type="text" class="name" name="name" placeholder="Họ và tên">
@@ -37,7 +43,21 @@ if (!$hideFooter) { ?>
                                 <textarea id="message" name="message" rows="4" placeholder="Nội dung"></textarea>
                             </div>
                             <div class="col-12">
-                                <input type="submit" class="btn btn-submit submit" name="send-message" value="Gửi">
+                                <?php if (!isset($_GET['success'])): ?>
+                                    <input type="submit" class="btn btn-submit submit" name="send-message" value="Gửi">
+                                <?php endif; ?>
+                            </div>
+                            <div class="col-12">
+                                <?php if (isset($_GET['success']) && $_GET['success'] == 'yes'): ?>
+                                    <div class="alert alert-success" role="alert">
+                                        Cảm ơn bạn! Chúng tôi đã nhận được lời nhắn từ bạn.
+                                    </div>
+                                <?php endif; ?>
+                                <?php if (isset($_GET['success']) && $_GET['success'] == 'no'): ?>
+                                    <div class="alert alert-warning" role="alert">
+                                        Lời nhắn không được gửi! Bạn hãy kiểm tra thông tin nhập.
+                                    </div>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </form>
@@ -65,7 +85,8 @@ if (!$hideFooter) { ?>
                     <p>Tel: <a href="tel:02838327986">(028) 38.32.79.86</a></p>
                     <p>Hotline: <a href="tel:0911470606">0911 47 0606</a></p>
                     <p>Email: <a href="mailto:duhocuoe@gmail.com">duhocuoe@gmail.com</a></p>
-                    <p class="hide-mobile">Zalo: <a href="https://chat.zalo.me/?phone=0934155606" target="_blank">0934155606</a></p>
+                    <p class="hide-mobile">Zalo: <a href="https://chat.zalo.me/?phone=0934155606" target="_blank">0934155606</a>
+                    </p>
                     <p class="hide-pc">Zalo: <a href="https://zalo.me/0934155606" target="_blank">0934155606</a></p>
                 </div>
                 <div class="col-6 address-col">
@@ -73,7 +94,8 @@ if (!$hideFooter) { ?>
                     <p>Tòa nhà La Bonita, 215 Nguyễn Gia Trí, phường 25, quận Bình Thạnh, TPHCM</p>
                     <p>Hotline: <a href="tel:0911750606">0911 75 0606</a></p>
                     <p>Email: <a href="mailto:duhocuoe@gmail.com">duhocuoe@gmail.com</a></p>
-                    <p class="hide-mobile">Zalo: <a href="https://chat.zalo.me/?phone=0941579922" target="_blank">0941579922</a></p>
+                    <p class="hide-mobile">Zalo: <a href="https://chat.zalo.me/?phone=0941579922" target="_blank">0941579922</a>
+                    </p>
                     <p class="hide-pc">Zalo: <a href="https://zalo.me/0941579922" target="_blank">0941579922</a></p>
                 </div>
             </div>

@@ -428,7 +428,7 @@ class Util {
      * @return string
      */
     public function esc_sql_name($name) {
-        return \str_replace('`', '``', $name);
+        return \str_replace(['`', '-'], ['``', '_'], $name);
     }
     /**
      * Get instance.

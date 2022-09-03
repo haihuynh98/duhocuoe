@@ -19,7 +19,6 @@ class WPML implements \MatthiasWeb\RealMediaLibrary\overrides\interfce\comp\IOve
     use CompWPML;
     use UtilsProvider;
     private static $me = null;
-    private $active = \false;
     /**
      * Avoid duplicate call of move action.
      */
@@ -32,15 +31,14 @@ class WPML implements \MatthiasWeb\RealMediaLibrary\overrides\interfce\comp\IOve
      * C'tor.
      */
     private function __construct() {
-        // Silence is golden.
+        add_action('DevOwl/Utils/NewVersionInstallation/' . RML_SLUG, [$this, 'dbDeltaCountCache']);
     }
     /**
      * Initialize actions and filters.
      */
     public function init() {
         global $sitepress;
-        $this->active = $sitepress !== null && \get_class($sitepress) === 'SitePress';
-        if ($this->active) {
+        if ($this->isActive()) {
             add_action(
                 'wpml_media_create_duplicate_attachment',
                 [$this, 'wpml_media_create_duplicate_attachment'],
@@ -160,7 +158,7 @@ class WPML implements \MatthiasWeb\RealMediaLibrary\overrides\interfce\comp\IOve
         $table_name = $this->getTableName();
         $table_name_icl = $this->getTableName('icl_count');
         $table_name_posts = $this->getTableName('posts');
-        $langs = $sitepress->get_active_languages();
+        $langs = $this->getActiveLanguages();
         $where = $where !== 'tn.cnt IS NULL' ? \str_replace('tn.id', 'tn.fid', $where) : '1=1';
         // Keep both tables synced (performance should be good because both queries use the best available index)
         // phpcs:disable WordPress.DB.PreparedSQL
@@ -172,7 +170,7 @@ class WPML implements \MatthiasWeb\RealMediaLibrary\overrides\interfce\comp\IOve
         // Sync available languages counts
         $setters = [];
         $readers = [];
-        foreach (\array_keys($langs) as $code) {
+        foreach ($langs as $code) {
             $escaped = \MatthiasWeb\RealMediaLibrary\Util::getInstance()->esc_sql_name($code);
             $setters[] = "tn.`cnt_{$escaped}` = curr.`cnt_{$escaped}`";
             // phpcs:disable WordPress.DB.PreparedSQL
@@ -220,7 +218,7 @@ class WPML implements \MatthiasWeb\RealMediaLibrary\overrides\interfce\comp\IOve
      * Create a count cache table with dbDelta functionality.
      */
     public function dbDeltaCountCache() {
-        if (!$this->active) {
+        if (!$this->isActive()) {
             return \false;
         }
         $this->getCore()
@@ -235,10 +233,9 @@ class WPML implements \MatthiasWeb\RealMediaLibrary\overrides\interfce\comp\IOve
         global $wpdb, $sitepress;
         $charset_collate = $wpdb->get_charset_collate();
         $table_name = $this->getTableName('icl_count');
-        $langs = $sitepress->get_active_languages();
+        $langs = $this->getActiveLanguages();
         if (\count($langs) > 0) {
             $keys = '';
-            $langs = \array_keys($langs);
             foreach ($langs as $code) {
                 $escaped = \MatthiasWeb\RealMediaLibrary\Util::getInstance()->esc_sql_name($code);
                 $keys .= "`cnt_{$escaped}` mediumint(10) DEFAULT NULL,\n    \t\t    ";
@@ -370,6 +367,20 @@ class WPML implements \MatthiasWeb\RealMediaLibrary\overrides\interfce\comp\IOve
     public function getDefaultId($attachment) {
         global $sitepress;
         return apply_filters('wpml_object_id', $attachment, 'post', \true, $sitepress->get_default_language());
+    }
+    /**
+     * Get active WPML language codes.
+     *
+     * @return string[]
+     */
+    public function getActiveLanguages() {
+        return \array_keys(apply_filters('wpml_active_languages', []));
+    }
+    /**
+     * Check if WPML plugin is active.
+     */
+    public function isActive() {
+        return is_plugin_active('sitepress-multilingual-cms/sitepress.php');
     }
     /**
      * Get instance.

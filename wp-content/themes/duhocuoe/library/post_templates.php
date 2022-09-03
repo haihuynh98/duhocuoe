@@ -18,7 +18,6 @@ function theme_select_post_template( $post )
         $template = 'templates/post.php';
         //get theme default post template
         global $theme_custom_templates, $theme_options;
-        print_r($theme_options);
         $postTemplateKey = array_search("Post", array_column($theme_options, 'name'));
         $option = $theme_options[$postTemplateKey];
         $id = theme_get_array_value($option, 'id');

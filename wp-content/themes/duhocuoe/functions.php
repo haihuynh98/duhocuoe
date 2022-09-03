@@ -1331,6 +1331,8 @@ require_once 'inc/tigergentlemen-lib/tigergentlemen-lib.php';
 require_once 'functions/contact.php';
 require_once 'functions/module-clients-listing.php';
 
+require_once 'functions/country_field_category.php';
+
 /**
  * REQUIRED FILES
  * Include required files.
@@ -1378,5 +1380,5 @@ function tg_insert_category()
 
 add_filter('init', 'tg_insert_category');
 
-
+require_once 'mail-template/dangkytuvanform.php';
 
