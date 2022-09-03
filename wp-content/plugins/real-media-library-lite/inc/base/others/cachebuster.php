@@ -1,11 +1,11 @@
 <?php
-/* This file was automatically generated (Wed Jul 06 2022 09:43:04 GMT+0000 (Coordinated Universal Time)). */
+/* This file was automatically generated (Mon Aug 29 2022 14:21:00 GMT+0000 (Coordinated Universal Time)). */
 return [
-    'src/public/dist/rml_gutenberg.lite.js' => '3d37a223a96263169ae2b80a657401a6',
-    'src/public/dist/rml_gutenberg.pro.js' => '092861083b3d0f93be211d69a05f4ecd',
-    'src/public/dist/rml_shortcode.lite.js' => 'ac9b5017d28809a9b30c828ee021b698',
-    'src/public/dist/rml_shortcode.pro.js' => 'e5b64b988d0333c152334a6da4a01250',
-    'src/public/dist/rml.lite.js' => 'e7dfcefba0fa86893f47364d01a5e192',
-    'src/public/dist/rml.pro.js' => '2690e28ec633804d7c48fe0eb99fa348',
-    'src/public/dist/rml.css' => '80921e7231fad25062760f4dcf18d25c'
+    'src/public/dist/rml_gutenberg.lite.js' => 'ec037dfb6f4518134e33bc6a33d2e466',
+    'src/public/dist/rml_gutenberg.pro.js' => '6a34186dde43c12b236b2fd5c0c947df',
+    'src/public/dist/rml_shortcode.lite.js' => 'f419c3f055a2c0c38261d02cafc0947e',
+    'src/public/dist/rml_shortcode.pro.js' => 'a0cfecb78879df4b82889630e39ce809',
+    'src/public/dist/rml.lite.js' => 'a1bf4f8db8d2e4679efa7a1ab5c916b1',
+    'src/public/dist/rml.pro.js' => '759b87dfa8596e3142d3119d80686fb3',
+    'src/public/dist/rml.css' => 'd5738f4ec509c51024b9cb336e4f08fe'
 ];

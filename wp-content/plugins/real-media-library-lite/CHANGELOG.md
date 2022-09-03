@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.18.11 (2022-08-29)
+
+
+### chore
+
+* introduce devowl-scripts binary (CU-2n41u7h)
+* introduce for non-flat node_modules development experience (CU-2n41u7h)
+* prepare packages for PNPM isolated module mode (CU-2n41u7h)
+* rebase conflicts (CU-2n41u7h)
+
+
+### fix
+
+* compatibility with latest WPML version and count cache (CU-2tdfh6u)
+* compatibility with latest WPML version and count cache (CU-2tdfh6u)
+* compatibility with latest WPML version and count cache (CU-2tdfh6u)
+* tinyMCE red error message in media library
+
+
+### perf
+
+* drop IE support completely (CU-f72yna)
+
+
+### refactor
+
+* use browsers URL implementation instead of url-parse (CU-f72yna)
+
+
+
+
+
+## 4.18.10 (2022-08-09)
+
+
+### fix
+
+* compatibility with hidden languages in WPML (CU-2tdfh6u)
+* support WPML iso country codes with dashes (CU-2tdfh6u)
+
+
+
+
+
 ## 4.18.9 (2022-07-06)
 
 

@@ -1,5 +1,5 @@
 <?php
-/* This file was automatically generated (Wed Jul 06 2022 09:43:04 GMT+0000 (Coordinated Universal Time)). */
+/* This file was automatically generated (Mon Aug 29 2022 14:21:00 GMT+0000 (Coordinated Universal Time)). */
 return [
     'es6-shim' => '0.35.6',
     'es7-shim' => '6.0.0',

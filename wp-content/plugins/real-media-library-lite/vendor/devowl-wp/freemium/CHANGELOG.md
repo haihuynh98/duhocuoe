@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.3.16 (2022-08-29)
+
+
+### chore
+
+* introduce devowl-scripts binary (CU-2n41u7h)
+* introduce for non-flat node_modules development experience (CU-2n41u7h)
+* introduce new command @devowl-wp/grunt-workspaces/update-local-versions (CU-2n41u7h)
+* prepare packages for PNPM isolated module mode (CU-2n41u7h)
+* rebase conflicts (CU-2n41u7h)
+* remove unnecessery update client third-party scripts in free version (CU-2kat97y)
+
+
+### perf
+
+* drop IE support completely (CU-f72yna)
+
+
+
+
+
 ## 1.3.15 (2022-06-08)
 
 

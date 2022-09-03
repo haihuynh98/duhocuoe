@@ -3,8 +3,8 @@ Contributors: totalsoft
 Donate link: https://total-soft.com/wp-video-gallery/
 Tags: gallery, image gallery, photo gallery, video gallery, wordpress gallery plugin
 Requires at least: 4.0
-Tested up to: 5.9
-Stable tag: 1.7.0
+Tested up to: 6.0
+Stable tag: 1.7.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -186,6 +186,10 @@ After activating video gallery choose the type of version you wish to use.
 16. An example of plugin in action - Parallax Engine
 
 == Changelog ==
+
+= Version 1.7.2 =
+
+* Fixed bug in YouTube.
 
 = Version 1.7.0 =
 

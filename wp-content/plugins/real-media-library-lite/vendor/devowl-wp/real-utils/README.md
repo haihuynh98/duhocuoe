@@ -6,7 +6,7 @@ Navigate to your real plugin and execute the following commands to add `real-uti
 
 ```
 composer require "devowl-wp/real-utils @dev"
-yarn lerna add @devowl-wp/real-utils --scope @devowl-wp/real-plugin
+dowl run lerna add @devowl-wp/real-utils --scope @devowl-wp/real-plugin
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ use DevOwl\RealUtils\WelcomePage;
 use DevOwl\RealThumbnailGenerator\base\UtilsProvider;
 
 // @codeCoverageIgnoreStart
-defined('ABSPATH') or die('No script kiddies please!'); // Avoid direct file request
+defined("ABSPATH") or die("No script kiddies please!"); // Avoid direct file request
 // @codeCoverageIgnoreEnd
 
 /**
@@ -62,8 +62,8 @@ class AdInitiator extends AbstractInitiator
     public function getRateLink()
     {
         return $this->isPro()
-            ? 'https://codecanyon.net/downloads#item-18937507'
-            : 'https://wordpress.org/support/plugin/' . RTG_SLUG_LITE . '/reviews/#new-post';
+            ? "https://codecanyon.net/downloads#item-18937507"
+            : "https://wordpress.org/support/plugin/" . RTG_SLUG_LITE . "/reviews/#new-post";
     }
 
     /**
@@ -77,52 +77,52 @@ class AdInitiator extends AbstractInitiator
 
         return [
             [
-                'image' => $this->getAssetsUrl('feature-bulk.jpg'),
-                'title' => __('Regenerate all your media in bulk', RTG_TD),
-                'description' => __(
+                "image" => $this->getAssetsUrl("feature-bulk.jpg"),
+                "title" => __("Regenerate all your media in bulk", RTG_TD),
+                "description" => __(
                     'Navigate to your media library and press the "Regenerate" button. A new dialog will open where you can regenerate your all thumbnails in media library with one click. Fast and efficient!',
                     RTG_TD
                 ),
-                'available_in' => $isPro
+                "available_in" => $isPro
                     ? null
-                    : [['Lite', WelcomePage::COLOR_BADGE_LITE], ['Pro', WelcomePage::COLOR_BADGE_PRO]],
-                'highlight_badge' => $isPro
+                    : [["Lite", WelcomePage::COLOR_BADGE_LITE], ["Pro", WelcomePage::COLOR_BADGE_PRO]],
+                "highlight_badge" => $isPro
                     ? null
                     : [
-                        'Pro',
+                        "Pro",
                         WelcomePage::COLOR_BADGE_PRO,
                         __(
-                            'In the PRO version you are able to regenerate more than 300 media files, skip existing files and check only specific thumbnail sizes.',
+                            "In the PRO version you are able to regenerate more than 300 media files, skip existing files and check only specific thumbnail sizes.",
                             RTG_TD
                         ),
                     ],
             ],
             [
-                'image' => $this->getAssetsUrl('feature-physical.gif'),
-                'title' => __('Custom thumbnail upload structure', RTG_TD),
-                'description' => __(
-                    'Have you ever looked at the URL paths of your media uploads? Not really expressive. But this is exactly what is important to ensure that your images and the pages on which they are used get a good ranking in search engines. Improve your ranking with physically reordered uploads!',
+                "image" => $this->getAssetsUrl("feature-physical.gif"),
+                "title" => __("Custom thumbnail upload structure", RTG_TD),
+                "description" => __(
+                    "Have you ever looked at the URL paths of your media uploads? Not really expressive. But this is exactly what is important to ensure that your images and the pages on which they are used get a good ranking in search engines. Improve your ranking with physically reordered uploads!",
                     RTG_TD
                 ),
-                'available_in' => $isPro ? null : [['Pro', WelcomePage::COLOR_BADGE_PRO]],
+                "available_in" => $isPro ? null : [["Pro", WelcomePage::COLOR_BADGE_PRO]],
             ],
             [
-                'image' => $this->getAssetsUrl('feature-delete-unused.gif'),
-                'title' => __('Rich meta data and detect unused files', RTG_TD),
-                'description' => __(
-                    'When you open a single media file, you can view a list of all included thumbnail sizes.',
+                "image" => $this->getAssetsUrl("feature-delete-unused.gif"),
+                "title" => __("Rich meta data and detect unused files", RTG_TD),
+                "description" => __(
+                    "When you open a single media file, you can view a list of all included thumbnail sizes.",
                     RTG_TD
                 ),
-                'available_in' => $isPro
+                "available_in" => $isPro
                     ? null
-                    : [['Lite', WelcomePage::COLOR_BADGE_LITE], ['Pro', WelcomePage::COLOR_BADGE_PRO]],
-                'highlight_badge' => $isPro
+                    : [["Lite", WelcomePage::COLOR_BADGE_LITE], ["Pro", WelcomePage::COLOR_BADGE_PRO]],
+                "highlight_badge" => $isPro
                     ? null
                     : [
-                        'Pro',
+                        "Pro",
                         WelcomePage::COLOR_BADGE_PRO,
                         __(
-                            'In the PRO version you can also delete unused thumbnail sizes - this can also be done for all files with one click.',
+                            "In the PRO version you can also delete unused thumbnail sizes - this can also be done for all files with one click.",
                             RTG_TD
                         ),
                     ],
@@ -137,7 +137,7 @@ class AdInitiator extends AbstractInitiator
      */
     public function getHeroButton()
     {
-        return $this->isPro() ? null : [__('Get your PRO license now!', RTG_TD), RTG_PRO_VERSION];
+        return $this->isPro() ? null : [__("Get your PRO license now!", RTG_TD), RTG_PRO_VERSION];
     }
 
     /**

@@ -3,8 +3,8 @@
 	Plugin name: Gallery
 	Plugin URI: https://total-soft.com/wp-video-gallery/
 	Description: Video Gallery created for those who really appreciate the beauty and taste. You can display your videos in high quality and best design.
-	Version: 1.7.0
-	Author: Total-Soft
+	Version: 1.7.2
+	Author: Video Gallery by totalsoft
 	Author URI: https://total-soft.com/
 	License: GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
 */

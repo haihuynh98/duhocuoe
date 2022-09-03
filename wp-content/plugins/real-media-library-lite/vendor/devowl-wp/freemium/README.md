@@ -21,8 +21,8 @@ Navigate to your plugin's `package.json` and add the following lines:
 {
     "slugLite": "real-media-library-lite",
     "scripts": {
-        "lite:activate": "yarn --silent root:run wp-cli \"wp config set RML_LITE true --raw\"",
-        "lite:deactivate": "yarn --silent root:run wp-cli \"wp config set RML_LITE false --raw\""
+        "lite:activate": "dowl root-run wp-cli \"wp config set RML_LITE true --raw\"",
+        "lite:deactivate": "dowl root-run wp-cli \"wp config set RML_LITE false --raw\""
     }
 }
 ```
@@ -197,7 +197,7 @@ applyFreemiumRunnerConfiguration(grunt);
 applyPluginRunnerConfiguration(grunt); // <- make sure to put the above line before this one
 ```
 
-Now, our `yarn build` builds two plugin folders, `real-media-library` and `real-media-library-lite` (and the zip's).
+Now, our `dowl run build` builds two plugin folders, `real-media-library` and `real-media-library-lite` (and the zip's).
 
 ### 8. Extend `webpack.config.ts`
 
@@ -246,7 +246,7 @@ grunt.initConfig({
 
 ### Enqueue assets correctly
 
-You will notice that now `yarn dev` or `yarn docker:start` builds two files of each entrypoint. For example, you will now get a `src/public/dev/rml.lite.js` and `src/public/dev/rml.pro.js`. You need to enqueue now the assets correctly in your `Assets.php`:
+You will notice that now `dowl run dev` or `dowl run docker:start` builds two files of each entrypoint. For example, you will now get a `src/public/dev/rml.lite.js` and `src/public/dev/rml.pro.js`. You need to enqueue now the assets correctly in your `Assets.php`:
 
 ```php
 $this->enqueueScript("rml", [[$this->isPro(), "rml.pro.js"], "rml.lite.js"], $scriptDeps);

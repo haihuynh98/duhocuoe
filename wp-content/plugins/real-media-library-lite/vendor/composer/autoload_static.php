@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit26bb13e81039354f2193690068cc4aaa
+class ComposerStaticInita04886192ebcd82fcff9dbf353432c33
 {
     public static $files = array (
         'cd48e99dc39649f6529395d65373ee16' => __DIR__ . '/..' . '/devowl-wp/real-product-manager-wp-client/src/autoload.php',
@@ -173,9 +173,9 @@ class ComposerStaticInit26bb13e81039354f2193690068cc4aaa
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit26bb13e81039354f2193690068cc4aaa::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit26bb13e81039354f2193690068cc4aaa::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit26bb13e81039354f2193690068cc4aaa::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInita04886192ebcd82fcff9dbf353432c33::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita04886192ebcd82fcff9dbf353432c33::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInita04886192ebcd82fcff9dbf353432c33::$classMap;
 
         }, null, ClassLoader::class);
     }
