@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-lg-9 col-12 content-container">
                 <header class="text-center">
-                    <?php the_title( '<h3 class="title-page">', '</h3>' );?>
+                    <?php the_title('<h3 class="title-page">', '</h3>'); ?>
                 </header>
 
                 <div class="content">
@@ -26,10 +26,10 @@
 
                     wp_link_pages(
                         array(
-                            'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'twentytwentyone' ) . '">',
-                            'after'    => '</nav>',
+                            'before' => '<nav class="page-links" aria-label="' . esc_attr__('Page', 'twentytwentyone') . '">',
+                            'after' => '</nav>',
                             /* translators: %: Page number. */
-                            'pagelink' => esc_html__( 'Page %', 'twentytwentyone' ),
+                            'pagelink' => esc_html__('Page %', 'twentytwentyone'),
                         )
                     );
                     ?>
@@ -38,8 +38,10 @@
 
             </div>
             <div class="col-lg-3 col-12 sidebar-post">
-                <?php echo get_template_part( 'template-parts/sidebar/sidebar-schools-majors');?>
-                <?php echo get_template_part( 'template-parts/sidebar/sidebar-post-popular' );?>
+                <div class="sticky-top">
+                    <?php echo get_template_part('template-parts/sidebar/sidebar-schools-majors'); ?>
+                    <?php echo get_template_part('template-parts/sidebar/sidebar-post-popular'); ?>
+                </div>
             </div>
         </div>
     </div>

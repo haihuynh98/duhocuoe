@@ -63,6 +63,11 @@ body {
         border-bottom: 1px dashed #ddd;
         padding-bottom: 20px;
       }
+
+      li:last-child {
+        border-bottom: none;
+        padding-bottom: 0px;
+      }
     }
   }
 

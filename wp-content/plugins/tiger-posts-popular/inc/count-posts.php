@@ -43,7 +43,7 @@ function tg_get_posts_most_view($postType = 'post', $order = 'DESC'): array
 		'post_type' => $postType,
 		'meta_key' => 'post_views_count',
 		'orderby' => 'meta_value_num',
-		'posts_per_page' => 5,
+		'posts_per_page' => 4,
 		'order' => $order
 	);
 
