@@ -73,6 +73,11 @@ section#swiper {
   border-radius: 50px;
   width: fit-content;
 }
+@media screen and (max-width: 768px) {
+  .overlay-banner .form-filter {
+    border-radius: 30px;
+  }
+}
 .overlay-banner .form-filter form > * {
   border-radius: 30px;
   padding: 0px 5px;

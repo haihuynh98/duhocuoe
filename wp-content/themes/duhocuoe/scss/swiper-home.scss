@@ -72,6 +72,10 @@ section#swiper{
     border-radius: 50px;
     width: fit-content;
 
+    @media screen and (max-width: 768px) {
+      border-radius: 30px;
+    }
+
     form {
      & > * {
        border-radius: 30px;
