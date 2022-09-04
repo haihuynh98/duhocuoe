@@ -38,10 +38,8 @@
 
             </div>
             <div class="col-lg-3 col-12 sidebar-post">
-                <div class="sticky-top">
-                    <?php echo get_template_part('template-parts/sidebar/sidebar-schools-majors'); ?>
-                    <?php echo get_template_part('template-parts/sidebar/sidebar-post-popular'); ?>
-                </div>
+                <?php echo get_template_part('template-parts/sidebar/sidebar-schools-majors'); ?>
+                <?php echo get_template_part('template-parts/sidebar/sidebar-post-popular'); ?>
             </div>
         </div>
     </div>
