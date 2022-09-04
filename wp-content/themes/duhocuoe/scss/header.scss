@@ -227,7 +227,9 @@
     .row {
       div:last-child {
         div {
-          padding: 0;
+          @media screen and (min-width: 769px) {
+            padding: 0;
+          }
         }
       }
     }

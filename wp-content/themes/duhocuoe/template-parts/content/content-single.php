@@ -34,6 +34,8 @@
                     );
                     ?>
                 </div><!-- .entry-content -->
+                <?php example_cats_related_post() ?>
+
             </div>
             <div class="col-lg-3 col-12 sidebar-post">
                 <?php echo get_template_part( 'template-parts/sidebar/sidebar-schools-majors');?>

@@ -113,7 +113,7 @@ if (version_compare($wp_version, '5.2', '>=')) {
                 </div>
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-xl-9 col-md-10 col-2">
+                        <div class="col-xl-9 col-lg-10 col-md-6 col-2">
                             <nav class="u-dropdown-icon u-menu u-menu-mega u-offcanvas u-menu-1 main-menu">
                                 <div class="menu-collapse"
                                      style="font-size: 0.875rem; letter-spacing: 0px; font-weight: 700;">
@@ -182,7 +182,7 @@ if (version_compare($wp_version, '5.2', '>=')) {
                             )); ?>
                         </div>
 
-                        <div class="col-xl-3 col-md-2 col-10">
+                        <div class="col-xl-3 col-lg-2 col-md-6 col-10">
                             <form action="/" class="search-form" id="search_form">
                                 <div class="form-group has-search">
                                     <span class="fa fa-search form-control-feedback"></span>
