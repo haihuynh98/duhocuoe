@@ -80,6 +80,9 @@ section.footer-form form.advise-form .btn-submit {
   font-weight: bold;
 }
 
+section.address-footer {
+  background-color: #F5F5F7;
+}
 section.address-footer .address-col h3 {
   text-transform: uppercase;
   font-weight: bold;
@@ -105,6 +108,23 @@ section.address-footer .address-col .hide-mobile {
   section.address-footer .address-col .hide-pc {
     display: none;
   }
+}
+
+section.gmaps {
+  background-color: #F5F5F7;
+}
+section.gmaps .map-container {
+  overflow: hidden;
+  padding-bottom: 30%;
+  position: relative;
+  height: 0;
+}
+section.gmaps .map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /*# sourceMappingURL=footer.css.map */

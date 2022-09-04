@@ -84,6 +84,7 @@ section.footer-form {
   font-size: 14px;
   padding-top: 20px;
   padding-bottom: 20px;
+
   p, a {
     color: white;
   }
@@ -95,6 +96,7 @@ section.footer-form {
 }
 
 section.address-footer {
+  background-color: #F5F5F7;
   .address-col {
     h3 {
       text-transform: uppercase;
@@ -118,7 +120,7 @@ section.address-footer {
       display: none;
     }
 
-    @media only screen and (hover: none) and (pointer: coarse){
+    @media only screen and (hover: none) and (pointer: coarse) {
       .hide-mobile {
         display: block;
       }
@@ -127,5 +129,23 @@ section.address-footer {
         display: none;
       }
     }
+  }
+}
+
+section.gmaps {
+  background-color: #F5F5F7;
+  .map-container {
+    overflow: hidden;
+    padding-bottom: 30%;
+    position: relative;
+    height: 0;
+  }
+
+  .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 }
