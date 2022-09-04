@@ -410,7 +410,7 @@ if (is_admin()) {
     locate_template(array('library/content-import.php'), true);
 }
 
-theme_include_lib('post_templates.php');
+//theme_include_lib('post_templates.php');
 
 function theme_include_lib($name, $dir = 'library')
 {
@@ -1352,26 +1352,26 @@ add_filter('init', 'wp_noshor_redefine_locale');
 // Check not exists term then create new term to category
 function tg_insert_category()
 {
-    if (is_admin()){
+    if (is_admin()) {
         $taxonomy = 'category';
-        if (is_null(term_exists('truong',$taxonomy))) {
+        if (is_null(term_exists('truong', $taxonomy))) {
             wp_insert_term(
                 'Trường',   // the term
                 $taxonomy, // the taxonomy
                 array(
                     'description' => 'Danh sách các trường',
-                    'slug'        => 'truong',
+                    'slug' => 'truong',
                 )
             );
         }
 
-        if (is_null(term_exists('nganh-hoc',$taxonomy))) {
+        if (is_null(term_exists('nganh-hoc', $taxonomy))) {
             wp_insert_term(
                 'Ngành học',   // the term
                 $taxonomy, // the taxonomy
                 array(
                     'description' => 'danh sách các ngành học',
-                    'slug'        => 'nganh-hoc',
+                    'slug' => 'nganh-hoc',
                 )
             );
         }
@@ -1382,3 +1382,64 @@ add_filter('init', 'tg_insert_category');
 
 require_once 'mail-template/dangkytuvanform.php';
 
+function example_cats_related_post()
+{
+
+    $post_id = get_the_ID();
+    $cat_ids = array();
+    $categories = get_the_category($post_id);
+
+    if (!empty($categories) && !is_wp_error($categories)):
+        foreach ($categories as $category):
+            array_push($cat_ids, $category->term_id);
+        endforeach;
+    endif;
+
+    $current_post_type = get_post_type($post_id);
+
+    $query_args = array(
+        'category__in' => $cat_ids,
+        'post_type' => $current_post_type,
+        'post__not_in' => array($post_id),
+        'posts_per_page' => '3',
+    );
+
+    $related_cats_post = new WP_Query($query_args);
+
+    if ($related_cats_post->have_posts()): ?>
+        <div class="related-post" id="related_post">
+            <div class="title">
+                <h3 class="text-uppercase">Bài viết liên quan</h3>
+                <hr class="border border-danger border-2 opacity-50">
+            </div>
+            <div class="row row-related-post">
+                <?php
+                while ($related_cats_post->have_posts()): $related_cats_post->the_post(); ?>
+                    <div class="col-md-4 col-12">
+                        <a href="<?php the_permalink(); ?>">
+
+                            <div class="row item-related-post">
+                                <div class="col-md-12 col-5">
+                                    <img class="" src="<?= get_the_post_thumbnail_url(get_the_ID()) ?>"
+                                         onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';"
+                                         alt="<?= get_the_title()?>">
+                                </div>
+                                <div class="col-md-12 col-7">
+                                    <h3 class="post-title text-overflow-3-line"><?= get_the_title() ?></h3>
+                                    <p class="description text-overflow-3-line"><?= get_the_excerpt() ?></p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                <?php endwhile;
+
+                // Restore original Post Data
+                wp_reset_postdata();
+                ?>
+            </div>
+        </div>
+    <?php
+    endif;
+
+}
