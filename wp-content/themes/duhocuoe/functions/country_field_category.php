@@ -53,7 +53,7 @@ function add_field_school($tag)
                         ?>
                         <tr>
                             <td style="padding: 0px">
-                                <input type="checkbox" name="schools_ca t[]" id="School_list"
+                                <input type="checkbox" name="schools_cat[]" id="School_list"
                                        value="<?php echo $cat->term_id ?>" <?php echo $checked?>>
                                 <span class="school-name"><?php echo $cat->name ?></span>
                             </td>
@@ -74,10 +74,15 @@ add_action('edited_category', 'save_is_country_category_fileds');
 add_action('create_category', 'save_is_country_category_fileds');
 function save_is_country_category_fileds($term_id)
 {
+    $t_id = $term_id;
+
     if (isset($_POST['is_country'])) {
-        $t_id = $term_id;
         $valueTermMeta = $_POST['is_country'] == 'on' ? 1 : 0;
         update_option("is_country_category_$t_id", $valueTermMeta);
+    } else {
+        if (!empty(get_option("is_country_category_$t_id"))) {
+            delete_option("is_country_category_$t_id");
+        }
     }
 }
 
@@ -86,9 +91,13 @@ add_action('edited_category', 'save_school_category_fileds');
 add_action('create_category', 'save_school_category_fileds');
 function save_school_category_fileds($term_id)
 {
+    $t_id = $term_id;
     if (isset($_POST['schools_cat'])) {
-        $t_id = $term_id;
         $valueTermMeta = $_POST['schools_cat'];
         update_option("schools_category_$t_id", implode(',', $valueTermMeta));
+    } else {
+        if (!empty(get_option("schools_category_$t_id"))) {
+            delete_option("schools_category_$t_id");
+        }
     }
 }

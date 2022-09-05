@@ -11,6 +11,11 @@ if (!is_null($majorsID = term_exists('nganh-hoc', $taxonomy))) {
 if (!is_null($schoolsIDID = term_exists('truong', $taxonomy))) {
     $schoolsIDChildren = get_term_children($schoolsIDID['term_id'], $taxonomy);
 }
+
+if (isset($args['schools']) && !empty($args['schools'])) {
+    $schoolsIDChildren = explode(',', $args['schools']);
+}
+
 ?>
 <div class="tab-schools-majors">
     <ul class="nav nav-tabs">
@@ -30,8 +35,8 @@ if (!is_null($schoolsIDID = term_exists('truong', $taxonomy))) {
         <div id="schools" class="tab-pane fade">
             <ul>
                 <?php foreach ($schoolsIDChildren as $IDChild) {
-                    $termItem = get_term($IDChild, $taxonomy, ARRAY_A);
-                    echo sprintf('<li><a href="%s">%s</a></li>', get_term_link($IDChild), $termItem['name']);
+                    $termItem = get_term(intval($IDChild), $taxonomy, ARRAY_A);
+                    echo sprintf('<li><a href="%s">%s</a></li>', get_term_link(intval($IDChild)), $termItem['name']);
                 }?>
             </ul>
         </div>
