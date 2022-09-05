@@ -339,7 +339,7 @@
   .menu-item-has-children {
     & > .u-nav-link:after {
       content: "\25B8" !important;
-      margin-left: 0.5rem;
+      margin-left: 2px;
       margin-right: -0.5rem;
     }
   }

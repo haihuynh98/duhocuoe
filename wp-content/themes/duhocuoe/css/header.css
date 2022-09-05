@@ -303,7 +303,7 @@
 
 .u-nav-popup .menu-item-has-children > .u-nav-link:after {
   content: "▸" !important;
-  margin-left: 0.5rem;
+  margin-left: 2px;
   margin-right: -0.5rem;
 }
 
