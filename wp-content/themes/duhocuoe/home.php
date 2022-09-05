@@ -66,19 +66,19 @@ get_header();
                         <select id="majors">
                             <option value="">Ngành học</option>
                             <?php foreach ($majors as $major): ?>
-                                <option value="<?= $major?>"><?= $major?></option>
+                                <option value="<?= $major ?>"><?= $major ?></option>
                             <?php endforeach; ?>
                         </select>
                         <select id="country">
                             <option value="">Điểm đến</option>
                             <?php foreach ($countrys as $country): ?>
-                                <option value="<?= $country?>"><?= $country?></option>
+                                <option value="<?= $country ?>"><?= $country ?></option>
                             <?php endforeach; ?>
                         </select>
                         <select id="certificate">
                             <option value="">Bằng cấp</option>
                             <?php foreach ($certificates as $certificate): ?>
-                                <option value="<?= $certificate?>"><?= $certificate?></option>
+                                <option value="<?= $certificate ?>"><?= $certificate ?></option>
                             <?php endforeach; ?>
                         </select>
                         <input type="submit" class="submit btn" id="submit" value="Tra cứu" disabled>
@@ -153,12 +153,16 @@ if (count($postScholarship) == 0 && function_exists('tg_get_all_post')) {
                     <?php foreach ($queryPopular as $popularPost) : ?>
                         <div class="swiper-slide">
                             <div class="post-container">
-                                <h3 class="post-title"><?= $popularPost->post_title ?></h3>
+                                <a href="<?= get_permalink($popularPost->ID) ?>">
+                                    <h3 class="post-title"><?= $popularPost->post_title ?></h3>
+                                </a>
                                 <p class="post-date text-center"> <?= get_the_date('j F, Y', $popularPost->ID) ?></p>
-                                <img class="crop-image-400 h-mobile-50"
-                                     src="<?= get_the_post_thumbnail_url($popularPost->ID) ?>"
-                                     alt="<?= $popularPost->post_title ?>"
-                                     onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';">
+                                <a href="<?= get_permalink($popularPost->ID) ?>">
+                                    <img class="crop-image-400 h-mobile-50"
+                                         src="<?= get_the_post_thumbnail_url($popularPost->ID) ?>"
+                                         alt="<?= $popularPost->post_title ?>"
+                                         onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';">
+                                </a>
                                 <p class="description text-overflow-4-line"><?= $popularPost->post_excerpt ?></p>
                                 <a href="<?= get_permalink($popularPost->ID) ?>"
                                    class="btn btn-read-more bg-blue btn-center">Xem Thêm</a>
@@ -194,14 +198,17 @@ if (count($postEvent) == 0 && function_exists('tg_get_all_post')) {
                         <div class="swiper-wrapper">
                             <?php foreach ($postEvent as $event): ?>
                                 <div class="swiper-slide">
-                                    <div class="post-container post-container-event">
-                                        <img class="crop-image-200" src="<?= get_the_post_thumbnail_url($event->ID) ?>"
-                                             onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';"
-                                             alt="<?= $event->post_title ?>">
-                                        <h3 class="post-title text-overflow-3-line"><?= $event->post_title ?></h3>
-                                        <p class="description text-overflow-3-line"><?= $event->post_excerpt ?></p>
-                                        <p class="public-at"> <?= get_the_date('j F, Y', $event->ID) ?></p>
-                                    </div>
+                                    <a href="<?= get_the_permalink($event->ID) ?>">
+                                        <div class="post-container post-container-event">
+                                            <img class="crop-image-200"
+                                                 src="<?= get_the_post_thumbnail_url($event->ID) ?>"
+                                                 onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';"
+                                                 alt="<?= $event->post_title ?>">
+                                            <h3 class="post-title text-overflow-3-line"><?= $event->post_title ?></h3>
+                                            <p class="description text-overflow-3-line"><?= $event->post_excerpt ?></p>
+                                            <p class="public-at"> <?= get_the_date('j F, Y', $event->ID) ?></p>
+                                        </div>
+                                    </a>
                                 </div>
                             <?php endforeach; ?>
 
