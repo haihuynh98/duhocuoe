@@ -21,10 +21,10 @@ class MailConfig
 // Server settings
 //$mail->SMTPDebug = SMTP::DEBUG_SERVER;    //Enable verbose debug output
         $this->PHPMailer->isSMTP();                            // Set mailer to use SMTP
-        $this->PHPMailer->Host = 'smtp.hostinger.com';           // Specify main and backup SMTP servers
+        $this->PHPMailer->Host = 'smtp.gmail.com';           // Specify main and backup SMTP servers
         $this->PHPMailer->SMTPAuth = true;                     // Enable SMTP authentication
-        $this->PHPMailer->Username = 'info@tigergentlemen.com';       // SMTP username
-        $this->PHPMailer->Password = 'Redzone@ 123';         // SMTP password
+        $this->PHPMailer->Username = 'haihuynh.dev@gmail.com';       // SMTP username
+        $this->PHPMailer->Password = 'zmxufniwxbalwmma';         // SMTP password
         $this->PHPMailer->SMTPSecure = 'ssl';                  // Enable TLS encryption, `ssl` also accepted
         $this->PHPMailer->Port = 465;                          // TCP port to connect to
 
