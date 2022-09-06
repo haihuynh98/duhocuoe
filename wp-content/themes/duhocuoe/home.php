@@ -99,7 +99,7 @@ get_header();
                 học sinh, sinh viên Việt Nam có hoài bão học tập, nghiên cứu, sinh sống ở nước ngoài, tìm những chân
                 trời mới để mở mang kiến thức, nâng cao giá trị bản thân, sẵn sàng cho một kỷ nguyên hội nhập đa quốc
                 gia. </p>
-            <a href="/about" class="btn btn-read-more">Xem thêm</a>
+            <a href="/ve-uoe" class="btn btn-read-more">Xem thêm</a>
             <img src="/wp-content/themes/duhocuoe/images/Untitled-1-07.png"
                  alt="CÔNG TY LIÊN HỆ  GIÁO DỤC ĐẠI DƯƠNG - UOE" class="image-about">
         </div>
