@@ -1299,7 +1299,7 @@ function load_css_js()
         wp_enqueue_style('page', get_template_directory_uri() . '/css/page.min.css');
         wp_enqueue_script('page', get_template_directory_uri() . '/js/page.js', null, null, true);
     }
-    if (is_archive()) {
+    if (is_archive() || is_search() ) {
         wp_enqueue_style('archive-list', get_template_directory_uri() . '/css/archive.min.css');
     }
     if (is_home()) {
