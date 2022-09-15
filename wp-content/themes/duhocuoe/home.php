@@ -187,9 +187,7 @@ if (count($postEvent) == 0 && function_exists('tg_get_all_post')) {
             <div class="row">
                 <div class="col-lg-4 col-12 col-left">
                     <h3 class="section-title">SỰ KIỆN HỘI THẢO</h3>
-                    <p>Các sự kiện được <strong>Công ty Liên Hiệp Giáo Dục Đại Dương – Du học UOE</strong> được tạo ra
-                        nhầm mục đích cho
-                        các ó thể gặp gỡ trực tiếp với đại diện trường và trao đổi về kế hoạch học tập, cuộc sống.</p>
+                    <?php echo category_description($eventID);?>
                     <a href="<?= get_category_link($eventID) ?>" class="btn btn-read-more btn-outline-blue">Xem
                         thêm sự kiện</a>
                 </div>
