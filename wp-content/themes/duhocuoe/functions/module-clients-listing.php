@@ -9,17 +9,25 @@ function create_clients_posttype()
         array(
             'labels' => array(
                 'name' => __('Clients'),
-                'singular_name' => __('Clients')
+                'singular_name' => __('Clients'),
+                'add_new'               => __( 'Add New Client', 'textdomain' ),
+                'add_new_item'          => __( 'Add New Client', 'textdomain' ),
+                'new_item'              => __( 'New Client', 'textdomain' ),
+                'add_new_item'          => __( 'Add New Client', 'textdomain' ),
+                'new_item'              => __( 'New Client', 'textdomain' ),
+                'edit_item'             => __( 'Edit Client', 'textdomain' ),
+                'view_item'             => __( 'View Client', 'textdomain' ),
+                'all_items'             => __( 'All Clients', 'textdomain' ),
+                'search_items'          => __( 'Search Clients', 'textdomain' ),
             ),
             'description' => __('Clients listing', 'twentytwentyone'),
             // Features this CPT supports in Post Editor
-            'supports' => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields'),
+            'supports' => array('title', 'thumbnail', 'revisions'),
             'taxonomies' => array('genres'),
             'public' => true,
             'has_archive' => true,
             'rewrite' => array('slug' => 'clients'),
             'show_in_rest' => true,
-
         )
     );
 }
