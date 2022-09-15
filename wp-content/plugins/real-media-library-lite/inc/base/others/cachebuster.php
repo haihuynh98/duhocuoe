@@ -1,5 +1,5 @@
 <?php
-/* This file was automatically generated (Mon Aug 29 2022 14:21:00 GMT+0000 (Coordinated Universal Time)). */
+/* This file was automatically generated (Tue Sep 06 2022 11:35:24 GMT+0000 (Coordinated Universal Time)). */
 return [
     'src/public/dist/rml_gutenberg.lite.js' => 'ec037dfb6f4518134e33bc6a33d2e466',
     'src/public/dist/rml_gutenberg.pro.js' => '6a34186dde43c12b236b2fd5c0c947df',

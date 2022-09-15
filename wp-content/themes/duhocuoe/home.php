@@ -187,9 +187,7 @@ if (count($postEvent) == 0 && function_exists('tg_get_all_post')) {
             <div class="row">
                 <div class="col-lg-4 col-12 col-left">
                     <h3 class="section-title">SỰ KIỆN HỘI THẢO</h3>
-                    <p>Các sự kiện được <strong>Công ty Liên Hiệp Giáo Dục Đại Dương – Du học UOE</strong> được tạo ra
-                        nhầm mục đích cho
-                        các ó thể gặp gỡ trực tiếp với đại diện trường và trao đổi về kế hoạch học tập, cuộc sống.</p>
+                    <?php echo category_description($eventID);?>
                     <a href="<?= get_category_link($eventID) ?>" class="btn btn-read-more btn-outline-blue">Xem
                         thêm sự kiện</a>
                 </div>
@@ -221,75 +219,8 @@ if (count($postEvent) == 0 && function_exists('tg_get_all_post')) {
         </div>
     </section>
 
-    <section class="member-sharing" id="member-sharing">
-        <div class="container">
-            <h3 class="section-title">CHIA SẺ HỌC VIÊN</h3>
-            <div class="row">
-                <div class="col-md-4 col-12">
-                    <div class="member-item">
-                        <img src="/wp-content/themes/duhocuoe/images/hocvien/MNpQ4sfn.jpeg" alt="people"
-                             class="member-avt">
-                        <p>"Các anh chị tư vấn viên UOE rất nhiệt tình và có nhiều hiểu biết về các trường, ngành, giúp
-                            việc định hướng của em được nhanh và chính xác hơn."</p>
-
-                        <div class="member-footer"><h4 class="member-name">Ngọc Mẫn</h4></div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="member-item">
-                        <img src="/wp-content/themes/duhocuoe/images/hocvien/N4FQUTrb.jpeg" alt="people"
-                             class="member-avt">
-                        <p>"Đài Loan là đất nước tuyệt vời! Con người thân thiện, khí hậu dễ chịu và quan trọng hơn hết
-                            là chất lượng giáo dục rất tốt! "</p>
-                        <div class="member-footer"><h4 class="member-name">Ngọc Ánh</h4></div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="member-item">
-                        <img src="/wp-content/themes/duhocuoe/images/hocvien/ZL3oGpxj.jpeg" alt="people"
-                             class="member-avt">
-                        <p>"Du học Đài Loan là ước mơ từ rất lâu của mình. Cuối cùng mình đã hiện thực hóa được giấc mơ
-                            đó. Cảm ơn UOE rất nhiều. "</p>
-                        <div class="member-footer"><h4 class="member-name">Khánh Ly</h4></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="consultants" id="consultants">
-        <div class="container">
-            <h3 class="section-title">CHUYÊN VIÊN TƯ VẤN</h3>
-            <div class="row">
-                <div class="col-md-3 col-6 member-item">
-                    <img src="/wp-content/themes/duhocuoe/images/tuvanvien/z3557173750596_5ae7b53c44b2cc2c3830dbb7736c231f.jpeg"
-                         alt="people"
-                         class="member-avt">
-                    <h4 class="member-name">Châu Ngọc Phương</h4>
-                    <p>Tư vấn viên</p>
-                </div>
-                <div class="col-md-3 col-6 member-item">
-                    <img src="/wp-content/themes/duhocuoe/images/tuvanvien/3ce75c4929f7d5a98ce6-4876.jpeg" alt="people"
-                         class="member-avt">
-                    <h4 class="member-name">Trần Duy Lâm</h4>
-                    <p>Tư vấn viên</p>
-                </div>
-                <div class="col-md-3 col-6 member-item">
-                    <img src="/wp-content/themes/duhocuoe/images/tuvanvien/6528f72c83927fcc2683-2033.jpeg" alt="people"
-                         class="member-avt">
-                    <h4 class="member-name">Hoàng Thị Hải Yến</h4>
-                    <p>Tư vấn viên</p>
-                </div>
-                <div class="col-md-3 col-6 member-item">
-                    <img src="wp-content/themes/duhocuoe/images/tuvanvien/e951af4cd8f224ac7de3-3996.jpeg" alt="people"
-                         class="member-avt">
-                    <h4 class="member-name">Nguyễn Khắc Minh</h4>
-                    <p>Tư vấn viên</p>
-                </div>
-
-
-            </div>
-    </section>
-
+<?= get_template_part('template-parts/home/members'); ?>
+<?= get_template_part('template-parts/home/counselors'); ?>
 <?= get_template_part('template-parts/home/our', 'customers'); ?>
 
 <?php
