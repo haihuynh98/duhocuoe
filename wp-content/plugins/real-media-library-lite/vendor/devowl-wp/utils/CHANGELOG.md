@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.12.15 (2022-09-06)
+
+
+### fix
+
+* url builder did not work when overriding query parameters (CU-2wmg9xv)
+
+
+
+
+
 ## 1.12.14 (2022-08-29)
 
 
