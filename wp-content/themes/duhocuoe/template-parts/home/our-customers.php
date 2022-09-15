@@ -1,9 +1,15 @@
+<?php $customers = getClientsListingArray();
+
+if (count($customers) == 0){
+    return 0;
+}
+?>
 <section class="our-customers section-home ">
     <div class="container-fluid">
         <div class="swiper-container swiper-customers">
             <div class="swiper-wrapper swiper-customers-wrapper">
 				<?php
-				$customers = getClientsListingArray();
+
 				if ( isset( $customers ) ):
 					foreach ( $customers as $customer ):
 						?>
