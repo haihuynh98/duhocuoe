@@ -14,7 +14,64 @@
 use Buttonizer\Admin\Admin;
 use Buttonizer\Utils\Settings;
 use Buttonizer\Api\Api;
+use Buttonizer\Utils\PageLanguage;
 use Buttonizer\Utils\PermissionCheck;
+
+/**
+ * Get current languages
+ */
+function getCurrentLanguage()
+{
+    // Polylang
+    if (function_exists("pll_current_language")) {
+        return pll_current_language("slug");
+    }
+
+    // Weglot
+    if (function_exists("weglot_get_current_language")) {
+        return weglot_get_current_language();
+    }
+
+    // WMPL
+    $currentLanguage = apply_filters('wpml_current_language', NULL);
+
+    // Try to fall back on current language
+    if (!$currentLanguage) return substr(get_bloginfo('language'), 0, 2);
+
+    return $currentLanguage;
+}
+
+/**
+ * Custom language
+ *
+ * Automatically redirects to the page in current language
+ */
+function buttonizer_redirect_to_page()
+{
+    // Validate params
+    if (!isset($_GET['page_id']) || !is_numeric($_GET['page_id']) || !isset($_GET['is_buttonizer_redirect'])) {
+        return;
+    }
+
+    $id = $_GET['page_id'];
+    $page = null;
+
+    // Polylang
+    if (function_exists("pll_get_post")) {
+        $page = pll_get_post($id);
+    }
+
+    // Check WPML translated page
+    if (!$page && $wpmlObject = apply_filters('wpml_object_id', $id)) {
+        $page = $wpmlObject;
+    }
+
+    // Redirect if post was found
+    if ($redirectUrl = get_the_permalink($page ?? $id)) {
+        wp_redirect($redirectUrl);
+        exit;
+    }
+}
 
 // Check Buttonizer Legacy enabled
 if (
@@ -36,9 +93,13 @@ if (
     }
 
     /**
+     * Redirect to page in correct language
+     */
+    add_action('template_redirect', 'buttonizer_redirect_to_page', 0);
+
+    /**
      * Add Buttonizer scripts
      */
-
     add_action('wp_enqueue_scripts', function () {
         // Add Google Analytics (old setting from Buttonizer 2.x)
         if (Settings::isset("google_analytics")) {
@@ -58,6 +119,11 @@ if (
         if (Settings::getSetting("site_id")) {
             wp_register_script('buttonizer_integration_script', 'https://cdn.buttonizer.io/embed.js', [], BUTTONIZER_VERSION, true);
 
+            // Get current page language
+            $pageData = [
+                "language" => getCurrentLanguage()
+            ];
+
             // Add Buttonize page data
             if (Settings::getSetting("include_page_data", false)) {
                 // Get page categories
@@ -66,21 +132,21 @@ if (
                 }, get_the_category());
 
                 // Collect page data
-                $pageData = [
+                $pageData = array_merge([
                     "page_id" => get_the_ID(),
                     "categories" => $pageCategories,
                     "is_frontpage" => is_front_page(),
                     "is_404" => is_404(),
                     "user_roles" => PermissionCheck::getUserRoles()
-                ];
-
-                // Define page data
-                $buttonizerData = "if(!window._buttonizer) { window._buttonizer = {}; };var _buttonizer_page_data = " . json_encode($pageData) . ";window._buttonizer.data = { ..._buttonizer_page_data, ...window._buttonizer.data };";
-
-                wp_register_script('buttonizer_data', "");
-                wp_add_inline_script('buttonizer_data', $buttonizerData);
-                wp_enqueue_script('buttonizer_data');
+                ], $pageData);
             }
+
+            // Define page data
+            $buttonizerData = "if(!window._buttonizer) { window._buttonizer = {}; };var _buttonizer_page_data = " . json_encode($pageData) . ";window._buttonizer.data = { ..._buttonizer_page_data, ...window._buttonizer.data };";
+
+            wp_register_script('buttonizer_data', "");
+            wp_add_inline_script('buttonizer_data', $buttonizerData);
+            wp_enqueue_script('buttonizer_data');
 
             // Add Buttonizer integration script
             wp_add_inline_script('buttonizer_integration_script', "

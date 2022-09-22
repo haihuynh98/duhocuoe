@@ -40,6 +40,9 @@ class PageBuilders {
         if (\class_exists('Tailor')) {
             $this->tailor();
         }
+        if (\class_exists('ZionBuilder\\Utils')) {
+            $this->zion();
+        }
         if (\defined('TVE_IN_ARCHITECT') || \class_exists('Thrive_Quiz_Builder')) {
             $this->thrive_architect();
         }
@@ -182,6 +185,14 @@ class PageBuilders {
      */
     private function tailor() {
         add_action('tailor_enqueue_sidebar_scripts', [$this->getCore()->getAssets(), 'admin_enqueue_scripts']);
+    }
+    /**
+     * Zion page builder.
+     *
+     * @see https://wordpress.org/plugins/zionbuilder/
+     */
+    private function zion() {
+        add_action('zionbuilder/editor/before_scripts', [$this->getCore()->getAssets(), 'admin_enqueue_scripts']);
     }
     /**
      * Cornerstone.

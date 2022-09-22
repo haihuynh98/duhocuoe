@@ -809,25 +809,47 @@ JS;
         if ($use_core) {
             return wp_localize_script($handle, $object_name, $l10n);
         }
-        global $wp_scripts;
-        /**
-         * WP_Scripts
-         *
-         * @var WP_Scripts
-         */
-        $wp_scripts = $wp_scripts;
-        //$script = "var $object_name = " . wp_json_encode($l10n) . ';';
-        // Keep `document.write` to avoid combine JS (https://git.io/JLF9l)
-        $script = \sprintf(
-            'var %s = /* document.write */ JSON.parse(atob("%s"));',
-            $object_name,
-            \base64_encode(wp_json_encode($l10n))
+        // Mark the script tag with some identifier, so our helper script (added below) can read
+        // the JSON content. See also about: https://stackoverflow.com/q/12090883/5506547
+        // Do not use a randomized string as it can lead to issues with cached web pages when the
+        // inline scripts gets somehow into a combined file and the HTML is served not statically.
+        $uuid = wp_generate_uuid4();
+        $uuid = \md5(
+            \sprintf(
+                '%s:%s:%s',
+                $handle,
+                $object_name,
+                $this->getPluginConstant(
+                    \MatthiasWeb\RealMediaLibrary\Vendor\MatthiasWeb\Utils\PluginReceiver::$PLUGIN_CONST_VERSION
+                )
+            )
         );
-        $data = $wp_scripts->get_data($handle, 'data');
-        if (!empty($data)) {
-            $script = "{$data}\n{$script}";
-        }
-        return $wp_scripts->add_data($handle, 'data', $script);
+        $helperLine = '[base64-encoded-plugin-config:]';
+        add_filter(
+            'script_loader_tag',
+            function ($tag, $scriptHandle) use ($handle, $uuid, $l10n, $object_name, $helperLine) {
+                if ($scriptHandle === $handle) {
+                    $tag =
+                        \sprintf(
+                            '<script type="text/plain" %6$s id="a%1$s1-js-extra">%4$s%2$s</script>
+<script id="a%1$s2-js-extra">var %3$s = /* document.write */ JSON.parse(window.atob(document.getElementById("a%1$s1-js-extra").innerHTML.substr(%5$d)));</script>',
+                            $uuid,
+                            \base64_encode(wp_json_encode($l10n)),
+                            $object_name,
+                            $helperLine,
+                            \strlen($helperLine),
+                            \join(' ', [
+                                // Compatibility with WP Fastest Cache and "Eliminate render blocking script"
+                                // as WPFC is moving all scripts (even with `type="text/plain"`).
+                                'data-skip-moving="true"'
+                            ])
+                        ) . $tag;
+                }
+                return $tag;
+            },
+            10,
+            3
+        );
     }
     /**
      * Wrapper for plugins_url. It respects the public folder depending on the SCRIPTS_DEBUG constant.

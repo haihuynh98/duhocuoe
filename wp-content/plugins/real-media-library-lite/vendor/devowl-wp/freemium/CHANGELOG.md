@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.3.20 (2022-09-21)
+
+**Note:** This package (@devowl-wp/freemium) has been updated because a dependency, which is also shipped with this package, has changed.
+
+
+
+
+
+## 1.3.19 (2022-09-21)
+
+**Note:** This package (@devowl-wp/freemium) has been updated because a dependency, which is also shipped with this package, has changed.
+
+
+
+
+
+## 1.3.18 (2022-09-20)
+
+**Note:** This package (@devowl-wp/freemium) has been updated because a dependency, which is also shipped with this package, has changed.
+
+
+
+
+
 ## 1.3.17 (2022-09-06)
 
 **Note:** This package (@devowl-wp/freemium) has been updated because a dependency, which is also shipped with this package, has changed.

@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.13.10 (2022-09-21)
+
+**Note:** This package (@devowl-wp/real-product-manager-wp-client) has been updated because a dependency, which is also shipped with this package, has changed.
+
+
+
+
+
+## 1.13.9 (2022-09-21)
+
+**Note:** This package (@devowl-wp/real-product-manager-wp-client) has been updated because a dependency, which is also shipped with this package, has changed.
+
+
+
+
+
+## 1.13.8 (2022-09-20)
+
+**Note:** This package (@devowl-wp/real-product-manager-wp-client) has been updated because a dependency, which is also shipped with this package, has changed.
+
+
+
+
+
+## 1.13.7 (2022-09-16)
+
+
+### fix
+
+* do not validate new host when request gets redirected (CU-2z4dheb)
+
+
+
+
+
 ## 1.13.6 (2022-09-06)
 
 **Note:** This package (@devowl-wp/real-product-manager-wp-client) has been updated because a dependency, which is also shipped with this package, has changed.

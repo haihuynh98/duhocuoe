@@ -138,6 +138,7 @@ class MigrateToStandalone
         $originalCanSendErrors = Settings::getSetting("can_send_errors", false);
         $originalUserPermissions = Settings::getSetting("permissions", false);
         $originalAdminBarSetting = Settings::getSetting("admin_top_bar_show_button", true);
+        $originalGoogleAnalyticsEnabled = Settings::getSetting("google_analytics_enabled", false);
         $originalGoogleAnalytics = Settings::getSetting("google_analytics", null);
 
         // Save new settings
@@ -153,7 +154,7 @@ class MigrateToStandalone
         Settings::setSetting("include_page_data", isset($result->account->site->licensed) && $result->account->site->licensed);
 
         // Migrate Google Analytics setting
-        if ($originalGoogleAnalytics) {
+        if ($originalGoogleAnalyticsEnabled && $originalGoogleAnalytics) {
             Settings::setSetting("google_analytics", $originalGoogleAnalytics);
         }
 
