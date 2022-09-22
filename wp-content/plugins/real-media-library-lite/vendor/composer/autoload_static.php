@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit369209821c0ba34b7f4d57032a3aafe7
+class ComposerStaticIniteca4806accb01d15e625d06bcfa90a8b
 {
     public static $files = array (
         'cd48e99dc39649f6529395d65373ee16' => __DIR__ . '/..' . '/devowl-wp/real-product-manager-wp-client/src/autoload.php',
@@ -173,9 +173,9 @@ class ComposerStaticInit369209821c0ba34b7f4d57032a3aafe7
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit369209821c0ba34b7f4d57032a3aafe7::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit369209821c0ba34b7f4d57032a3aafe7::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit369209821c0ba34b7f4d57032a3aafe7::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticIniteca4806accb01d15e625d06bcfa90a8b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticIniteca4806accb01d15e625d06bcfa90a8b::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticIniteca4806accb01d15e625d06bcfa90a8b::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.8.11 (2022-09-21)
+
+**Note:** This package (@devowl-wp/real-utils) has been updated because a dependency, which is also shipped with this package, has changed.
+
+
+
+
+
+## 1.8.10 (2022-09-21)
+
+**Note:** This package (@devowl-wp/real-utils) has been updated because a dependency, which is also shipped with this package, has changed.
+
+
+
+
+
+## 1.8.9 (2022-09-20)
+
+**Note:** This package (@devowl-wp/real-utils) has been updated because a dependency, which is also shipped with this package, has changed.
+
+
+
+
+
 ## 1.8.8 (2022-09-06)
 
 **Note:** This package (@devowl-wp/real-utils) has been updated because a dependency, which is also shipped with this package, has changed.

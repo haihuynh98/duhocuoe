@@ -4,83 +4,95 @@ Buy plugin: https://buttonizer.io
 Tags: Conversion, action button, call, marketing, Social Sharing
 Requires at least: 4.7
 Tested up to: 6.0
-Stable tag: 3.2.0
+Stable tag: 3.2.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-#1 Button builder. WhatsApp Chat, Facebook Messenger, Telegram, Call, SMS, Email, Social Sharing & More. Add an unlimited amount of Floating Buttons & Sticky Menus. Add dynamic page rules and decide when to show your floating menu on desktop.
+#1 Button builder. WhatsApp Chat, Facebook Messenger, Telegram, Call, SMS, Email & More. Unlimited Click to Chat, Floating Buttons, Contact Forms & Sticky Menus. With dynamic Page Rules. Use the WhatsApp widget Pop-up to convert your visitors.
 
 == Description ==
 
-Buttonizer is the most versatile Smart Floating Action (Sticky) Button plugin for WordPress. Choose **from over 30 click actions and chat buttons** to customize your website, such as adding a button for WhatsApp Chat, Phone Calls, Messenger, Social Media Sharing and much, much more.
+From WhatsApp Chat, Facebook Messenger, Floating contactform, WhatsApp widgets (New: WhatsApp Business), Click to Chat, Call, Email etc. Buttonizer is the most versatile <strong>Smart Floating Action (Sticky) Button plugin</strong> for WordPress.
+
+* Choose **from over 40 click actions and chat buttons**
+* Setup within 10 seconds + smart front-end interface (WYSIWYG Editor)
+* Templates ready or choose from all possible styling options
+* Build <strong>unlimited</strong> single floating buttons or interactive sticky menus
+* Floating popups and contactforms
+* Smart filters like show on scroll, device, pages and specific times
+* Analytics dashboard to see all interactions, leads and conversions
+
+= WhatsApp Chat, Business and 40+ click to chat channels 💬 =
+
+Buttonizer is specially designed in creating easy, smart floating chat buttons. You can connect your visitors with WhatsApp or WhatsApp Business with ease. You can even create a WhatsApp Popup, work with multiple whatsapp phone numbers (agents), manage opening and closing times and use page rules.
+
+📱 Mobile: Navigates to WhatsApp Mobile App.
+
+💻 Desktop: Navigates to WhatsApp Desktop App / Web WhatsApp page(web.whatsapp.com)
+
+Watch the video below to learn more on adding a Facebook Messenger Chat widget to your website:
 
 https://www.youtube.com/watch?v=uDMrSkBLsic
 
-Thanks to the front-end interface you can directly see the impact of the changes you make (WYSIWYG Editor). Therefore you can add a single floating action button, like a **WhatsApp chat button, in less than 10 seconds.** Buttonizer is a quick and easy way to boost the amount of interactions and conversions from your website visitors by adding one or multiple Customizable Smart Floating Buttons in the corner of your website.
-
-* Add unlimited number of floating action buttons
-* Choose from over 30 click actions and chat buttons
-* Customize the style of your buttons to fit your brand
-* Customize the position of your buttons
-* **No coding**, the plugin takes care of everything
-* Full Google Analytics support
-* Choose to show which buttons you want, whenever you want by adding filters
-* Help guide your visitors and boost the amount of interactions and conversions on your website
-
-= Click Actions / Click to Chat buttons =
-* **WhatsApp Chat**. Add your phone number and set a custom text message that your web visitors can send to you.
+= CLICK TO CHAT CHANNELS 🚀 =
+* **WhatsApp Chat**. Add your phone number and set a custom text message that your web visitors can send to you. Integrates with WhatsApp business
 * Click to **Call**
 * Click to **Email**
 * Click to **SMS**
 * Web **URL**
 * **Click to Chat**
-  * Facebook Messenger Widget
-  * WhatsApp Chat Widget
-  * Twitter Direct Message
-  * Snapchat
-  * Skype
-  * LINE
-  * Telegram
-  * Wechat
-  * Viber
-  * Join Signal group
+ * Facebook Messenger Widget
+ * WhatsApp Chat Widget (with popup)
+ * Twitter Direct Message
+ * Snapchat
+ * Skype
+ * LINE
+ * Telegram
+ * Wechat
+ * Viber
+ * Join Signal group
 * **Social Sharing buttons**
-  * Facebook
-  * Twitter
-  * Instagram
-  * Whatsapp
-  * LinkedIn
-  * Pinterest
-  * Email
-  * VKontakte
-  * Poptin
-  * Waze
-  * Line
+ * Share on Facebook
+ * Share on Twitter
+ * Share on Instagram
+ * Share on Whatsapp
+ *Share on  LinkedIn
+ * Share on Pinterest
+ * Share on Email
+ * Share on VKontakte
+ * Share on Waze
+ * Share on Line
 * **Open pop-up (optional: with contactform)**
-  * Poptin
-  * Elementor Popup
-  * Popup Maker
-  * WP Popups
+ * Poptin
+ * Elementor Popup
+ * Popup Maker
+ * WP Popups
 * Previous page
 * Back to top
-* Add Google Maps Button
-* Add download PDF Button
+* Google Maps Button (route navigation)
+* download PDF Button
 * Add custom JavaScript code (PRO)
 * Print page
 * Copy page **URL**
 
-= Many styling options =
+= STYLING OPTIONS 💎 =
+
+With Buttonizer you can customize almost everything. Create a floating text button (without icon), floating text button with icon or only a floating button with an icon.
+
++ Import and export your button templates easily (very nice if you have multiple websites)
++ Change the position of you button
+* Import and export button templates
 * Button and interaction **color**
 * Border radius
-* **Font Awesome 4.7** & **5** full support, over **1.608 available icons**
-* Font Awesome 5 Pro supported
+* **Font Awesome 4.7** & **5** pro full support, over **1.608 available icons**
+
 * Icon, size and interaction color
 * **Add label** to the floating action button (optional)
 * Change **label text color** and background color
 * Change **font-size and label border** radius
 * Show label only on **mobile phones, desktop or both**
-* Add **background image** (PRO)
+* Add **background image**
 * Add **custom class and ID** to each button (PRO)
 
 = Create floating menu’s =
@@ -90,6 +102,26 @@ With Buttonizer it is possible to add multiple floating action buttons to one po
 * **Pop** - Same as the default action but with a more active motion
 * **Corner circle** - Open buttons in quarter circle
 * **Square** - Show all buttons on top of each other at the same time (sticky buttons on the side of your website)
+
+
+= Example use cases for Buttonizer =
+
+<strong>+ Buttonizer VS live chat alternatives</strong>. Buttonizer gives you the ability to manage different chat options at the same time in different conditions. Each visitor has a different communication need. With live chat you give the visitor only one option. When you let your visitors chat with you using chat apps like Facebook Messenger, WhatsApp, Viber, Telegram, etc, you give them the freedom of chatting with you whenever they go. Why not get best of both worlds:
+
+<strong>+ Launch your favorite live chat </strong>. You can use JavaScript as one of your click actions to launch other live chat products like Hubspot, Tawk.to, Tidio, Chatra, Formilla, Zoho, Zendesk, LiveChat, Crisp, Intercom and JivoChat.
+
+<strong>+ Connect with your visitors on WhatsApp Business</strong>. Connect WhatsApp Business to your site. Your visitors can start chatting with you on WhatsApp Business.
+
+<strong>+ Setup different floating buttons on mobile and desktop </strong>. Show different chat buttons depending on the device where your visitor is using. Like show a call now and whatsapp button on mobile and a contactform, email and url on desktop.
+
+<strong>+ Add Click to call button</strong>. Show a phone icon and let your visitors click to call you. If you can show different local phone numbers based on page URL or available days and hours.
+
+<strong>+ Setup two buttons on the same page with show on scroll</strong>. Impress your visitors by adding two different buttons that are visible or get hidden after a specific scroll depth. Look at the Buttonizer website as an example.
+
+<strong>+ Show different action buttons for different pages </strong> You can use this feature to show separate widgets for different products on your website, show different buttons based on URL for WPML or multi-language sites, display different channels for your landing pages, and more.
+
+= WHATSAPP CHAT POP UP =
+You can use WhatsApp as a regular chat button, but you can also add the WhatsApp pop up and let your visitors start the conversation while the visitors are on your website. You can also easily integrate with WhatsApp Business or your regular WhatsApp account. Once the visitors click on the send button, they’ll be redirected to WhatsApp to continue the conversation there.
 
 = Advanced JavaScript API =
 Buttonizer is equipped with an advanced **Free JavaScript API** which you can use to interact with your Buttonizer menus. Trigger custom functions on particular events or just open the menu when clicking a button on your site. It's enabled instantly and can be used out of the box!
@@ -110,15 +142,15 @@ Choose whenever your buttons are visible. On desktop or mobile devices. On diffe
 
 * Show/hide button on **desktop or mobile devices**
 * Show/hide when **page rules** are true (PRO):
-  * Select single page
-  * Select categories / tags
-  * When URL contains ...
-  * Show/hide when the user has a **specific role**
+ * Select single page
+ * Select categories / tags
+ * When URL contains ...
+ * Show/hide when the user has a **specific role**
 * Show/hide on a **custom time schedule** (PRO)
-  * Choose the start and end date (optional)
-  * Select the days of the week
-  * Select at what time the button is visible or hidden for each day of the week
-  * Exclude dates
+ * Choose the start and end date (optional)
+ * Select the days of the week
+ * Select at what time the button is visible or hidden for each day of the week
+ * Exclude dates
 
 = But wait, there’s more! =
 * Track all your click actions in **Google Analytics**
@@ -127,9 +159,10 @@ Choose whenever your buttons are visible. On desktop or mobile devices. On diffe
 * **Auto save and revert changes**
 * A very [**active community**](https://community.buttonizer.pro/)
 * Add an **unlimited number** of floating / sticky **buttons**
-* Show buttons on scroll (PRO)
+* Show buttons on scroll
 * Show buttons after X seconds (PRO)
-* Add an unlimited number of positions (PRO)
+* Add an unlimited number of positions
+
 
 = One more thing. We like to Buzz =
 We are a team of developers dedicated to creating the best Floating Action Button for WordPress. We are adding over 5 new features each month based on the feedback we’re getting from our users.
@@ -139,6 +172,8 @@ Download Buttonizer for free and be part of our growing community!
 Do you need support or have a question? [Check our Community](https://community.buttonizer.pro/) and [our knowledge base!](https://community.buttonizer.pro/knowledgebase).
 
 Would you like private support? [Create a private support ticket here](https://community.buttonizer.pro/tickets).
+
+Buttonzier works great with all themes and page builders including Divi, Elementor, WPBakery, Visual Composer, WPBakery, Beaver, SiteOrigin, Gutenberg, Oxygen, Woocommerce, Zion and more
 
 == Installation ==
 
@@ -152,7 +187,7 @@ Would you like private support? [Create a private support ticket here](https://c
 * Click the Activate Plugin link.
 
 = For manual installation: =
-* You should have access to the server where WordPress is installed. If you don&#39;t, see your system administrator.
+* You should have access to the server where WordPress is installed. If you don't, see your system administrator.
 * Copy the plugin zip file up to your server and unzip it somewhere on the file system.
 * Copy the "Buttonizer" folder into the /wp-content/plugins directory of your WordPress installation.
 * Login to your website and go to the Plugins section of your admin panel.
@@ -170,9 +205,9 @@ The Buttonizer is a new way to give a boost to your number of interactions, acti
 
 = What's the difference between floating action buttons or other conversion buttons? =
 
-With Buttonizer you don't just add the same button to every page on your website. No, the key is that each action must be relevant. With the Buttonizer it&#39;s possible to add buttons to a select number of pages with "page rules", decide for each button if it shows on mobile and/or desktop, style your button with your own icons & colors, add social sharing buttons, Show the button on opening hours and make use of many more rules.
+With Buttonizer you don't just add the same button to every page on your website. No, the key is that each action must be relevant. With the Buttonizer it's possible to add buttons to a select number of pages with "page rules", decide for each button if it shows on mobile and/or desktop, style your button with your own icons & colors, add social sharing buttons, Show the button on opening hours and make use of many more rules.
 
-And the beauty of all: All actions are hidden in one button. The moment a visitor clicks on your Floating Action Button it will *pop* all specific buttons you&#39;ve set for that page. Track each single button in Google Analytics so you can see which actions your visitors prefer.
+And the beauty of all: All actions are hidden in one button. The moment a visitor clicks on your Floating Action Button it will *pop* all specific buttons you've set for that page. Track each single button in Google Analytics so you can see which actions your visitors prefer.
 
 In fact, Buttonizer is an addiction to use. Your website visitors will interact as never before.
 
@@ -181,6 +216,13 @@ WhatsApp chat, Facebook Messenger, Instagram, Email, SMS, Snapchat, Twitter, Lin
 
 = I don’t see the button on my site, what should I do? =
 Please make sure you’ve chosen at least one button and clicked on the green “Publish” button. If you still don't see any changes on the live site, you can clear the cache of your website if you have a caching plugin.
+
+= How can I add a WhatsApp chat popup? =
+Download the wordpress plugin, choose the whatsapp templates, change your phone number, change the text and there you go. You can also choose the WhatsApp widget option to add a popup window. Don’t forget to enter the WhatsApp number with country code
+E.g.
+country code +1
+number: 6123456789
+** WhatsApp number: 16123456789 **
 
 = Can I add multiple floating action buttons with the free version? =
 Yes you can but you can only choose one location (one button group with unlimited number of buttons). If you need multiple buttons on different locations you will need the premium version of the plugin.
@@ -191,7 +233,20 @@ Yes, you can choose for each button if you want to display the button on mobile,
 = Does Buttonizer support right-to-left languages? =
 Languages can have a different direction of writing and reading? While languages such as English are written and read from left to right, other languages might follow the right-to-left style of script. Just considering the sheer number of language speakers, it is obvious that Buttonizer could not stay behind and has made sure to reserve the layout of the user interface to support right-to-left languages.
 
+
 == Changelog ==
+
+= 3.2.2 =
+Release date: September 20, 2022
+
+**Changelog:**
+- Fix: Add a way to delete Google Analytics tracking code (if it was still from an earlier version).
+
+= 3.2.1 =
+Release date: September 19, 2022
+
+**Changelog:**
+- Fix: Link to correct page in correct language (if site is multilingual)
 
 = 3.2.0 =
 Release date: August 23, 2022

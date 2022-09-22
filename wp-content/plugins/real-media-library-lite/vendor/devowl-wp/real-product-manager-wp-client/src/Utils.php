@@ -12,6 +12,29 @@ use WP_User;
  */
 class Utils {
     /**
+     * Check if a string starts with a given needle.
+     *
+     * @param string $haystack The string to search in
+     * @param string $needle The starting string
+     * @see https://stackoverflow.com/a/834355/5506547
+     */
+    public static function startsWith($haystack, $needle) {
+        $length = \strlen($needle);
+        return \substr($haystack, 0, $length) === $needle;
+    }
+    /**
+     * Check if the current page request gets redirected.
+     */
+    public static function isRedirected() {
+        foreach (\headers_list() as $line) {
+            $header = \strtolower($line);
+            if (self::startsWith($header, 'location:')) {
+                return \true;
+            }
+        }
+        return \false;
+    }
+    /**
      * Get the IP address of the current request.
      */
     public static function getIpAddress() {

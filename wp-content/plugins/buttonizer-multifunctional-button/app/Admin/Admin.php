@@ -126,6 +126,7 @@ class Admin
                 'adminTopBarButtonEnabled' => Settings::getSetting("admin_top_bar_show_button", true),
                 'canSendErrors' => Settings::getSetting("can_send_errors", false),
                 'accessRoles' => Settings::getSetting("additional_permissions", []),
+                'googleAnalytics' => Settings::getSetting("google_analytics", null),
             ],
             'available_roles' => $this->getRoles(),
             'site' => [

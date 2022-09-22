@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.12.18 (2022-09-21)
+
+
+### fix
+
+* cmpatibility with WP Rocket and anonymous localized scripts when Delay JS is active (CU-2znjn1p)
+* compatibility with WP Fastest Cache, eliminate render-blocking and anonymous scripts (CU-2znjn1p)
+
+
+
+
+
+## 1.12.17 (2022-09-21)
+
+
+### fix
+
+* cookie banner not visible with WP Fastest Cache and LiteSpeed Defer JS option (CU-2znjn1p)
+
+
+
+
+
+## 1.12.16 (2022-09-20)
+
+
+### refactor
+
+* false-positive of malware scanner, refactor localized variable to valid text/plain variables (CU-2zabfnw)
+
+
+
+
+
 ## 1.12.15 (2022-09-06)
 
 

@@ -199,6 +199,7 @@ class License {
         $dynamic =
             \defined('RPM_WP_CLIENT_SKIP_DYNAMIC_HOST_CHECK') && \constant('RPM_WP_CLIENT_SKIP_DYNAMIC_HOST_CHECK');
         if (
+            !\MatthiasWeb\RealMediaLibrary\Vendor\DevOwl\RealProductManagerWpClient\Utils::isRedirected() &&
             $isLicensed &&
             !empty($currentHostname) &&
             \filter_var(\preg_replace('/:[0-9]+/', '', $currentHostname), \FILTER_VALIDATE_IP) === \false &&

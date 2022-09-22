@@ -76,8 +76,8 @@ class UpdateSettings
         }
 
         // Delete Google Analytics from settings
-        if (isset($data['deleteGoogleAnalytics']) && is_array($data['deleteGoogleAnalytics'])) {
-            Settings::deleteSetting("additional_permissions");
+        if (isset($data['google_analytics']) && $data['google_analytics'] === "unset") {
+            Settings::deleteSetting("google_analytics");
         }
 
         // Remind for a review

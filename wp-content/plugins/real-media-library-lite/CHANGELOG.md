@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 4.18.16 (2022-09-21)
+
+**Note:** This package (@devowl-wp/real-media-library) has been updated because a dependency, which is also shipped with this package, has changed.
+
+
+
+
+
+## 4.18.15 (2022-09-21)
+
+**Note:** This package (@devowl-wp/real-media-library) has been updated because a dependency, which is also shipped with this package, has changed.
+
+
+
+
+
+## 4.18.14 (2022-09-20)
+
+**Note:** This package (@devowl-wp/real-media-library) has been updated because a dependency, which is also shipped with this package, has changed.
+
+
+
+
+
+## 4.18.13 (2022-09-16)
+
+
+### fix
+
+* compatibility with Zion page builder (CU-2yywcqt)
+
+
+
+
+
 ## 4.18.12 (2022-09-06)
 
 **Note:** This package (@devowl-wp/real-media-library) has been updated because a dependency, which is also shipped with this package, has changed.
