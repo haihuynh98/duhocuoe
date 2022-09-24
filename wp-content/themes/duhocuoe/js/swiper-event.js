@@ -49,4 +49,57 @@
 })(jQuery);
 
 
+(function ($) {
+    if ($( window ).width() > 425) {
+        var swiper_members= new Swiper(".swiper-members", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".posts-member-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".posts-member-button-next",
+                prevEl: ".posts-member-button-prev",
+            },
+        });
+    } else {
+        var swiper_members= new Swiper(".swiper-members", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".posts-member-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".posts-member-button-next",
+                prevEl: ".posts-member-button-prev",
+            },
+        });
+    }
+
+
+
+    let maxHeightMember = 0;
+    let postContainerMember = $('.member-item .content-member');
+    postContainerMember.each(function () {
+        if ($(this).height() > maxHeightMember) {
+            maxHeightMember = $(this).height();
+        }
+    })
+    postContainerMember.each(function () {
+        $(this).height(maxHeightMember);
+    })
+})(jQuery);
+
+
+
+
+
 

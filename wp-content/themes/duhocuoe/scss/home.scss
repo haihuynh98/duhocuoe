@@ -110,3 +110,14 @@ section.our-customers {
     }
   }
 }
+
+section.our-visas {
+  padding: 30px;
+  overflow: hidden;
+
+  .swiper-slide {
+    img {
+      height: auto;
+    }
+  }
+}

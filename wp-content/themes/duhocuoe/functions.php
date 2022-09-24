@@ -1331,8 +1331,10 @@ require_once 'inc/tigergentlemen-lib/tigergentlemen-lib.php';
 require_once 'functions/contact.php';
 require_once 'functions/hide-notice-update.php';
 require_once 'functions/module-clients-listing.php';
-require_once 'functions/module-counselors-listing.php';
+require_once 'functions/module-visa-listing.php';
+//require_once 'functions/module-counselors-listing.php';
 require_once 'functions/module-members-listing.php';
+require_once 'functions/module-carousel.php';
 
 require_once 'functions/country_field_category.php';
 

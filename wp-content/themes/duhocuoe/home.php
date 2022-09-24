@@ -5,11 +5,14 @@ get_header();
 
     <section id="slider" class="slider">
         <!-- Swiper -->
+        <?php $carousels = getCarouselsListingArray(); ?>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="/wp-content/themes/duhocuoe/images/banner-1.jpeg" alt="banner 1">
-                </div>
+                <?php foreach ($carousels as $carousel): ?>
+                    <div class="swiper-slide">
+                        <img src="<?= $carousel['image'] ?>" srcset="<?php echo $carousel['image_large'] . ' 800w, ' . $carousel['image'] . ' 1000w' ?>" alt="<?= $carousel['name'] ?>">
+                    </div>
+                <?php endforeach; ?>
                 <div class="swiper-slide">
                     <img src="/wp-content/themes/duhocuoe/images/banner-2.webp" alt="banner 2">
                 </div>
@@ -122,7 +125,7 @@ if (count($postScholarship) == 0 && function_exists('tg_get_all_post')) {
                             <a href="<?= get_permalink($scholarship->ID) ?>">
                                 <div class="post-container post-container-scholarship">
                                     <img class="crop-image-200"
-                                         src="<?= get_the_post_thumbnail_url($scholarship->ID) ?>"
+                                         src="<?= get_the_post_thumbnail_url($scholarship->ID, 'medium') ?>"
                                          alt="<?= $scholarship->post_title; ?>"
                                          onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';">
                                     <h3 class="post-title text-overflow-3-line"><?= $scholarship->post_title; ?></h3>
@@ -159,7 +162,7 @@ if (count($postScholarship) == 0 && function_exists('tg_get_all_post')) {
                                 <p class="post-date text-center"> <?= get_the_date('j F, Y', $popularPost->ID) ?></p>
                                 <a href="<?= get_permalink($popularPost->ID) ?>">
                                     <img class="crop-image-400 h-mobile-50"
-                                         src="<?= get_the_post_thumbnail_url($popularPost->ID) ?>"
+                                         src="<?= get_the_post_thumbnail_url($popularPost->ID, 'medium_large') ?>"
                                          alt="<?= $popularPost->post_title ?>"
                                          onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';">
                                 </a>
@@ -187,7 +190,7 @@ if (count($postEvent) == 0 && function_exists('tg_get_all_post')) {
             <div class="row">
                 <div class="col-lg-4 col-12 col-left">
                     <h3 class="section-title">SỰ KIỆN HỘI THẢO</h3>
-                    <?php echo category_description($eventID);?>
+                    <?php echo category_description($eventID); ?>
                     <a href="<?= get_category_link($eventID) ?>" class="btn btn-read-more btn-outline-blue">Xem
                         thêm sự kiện</a>
                 </div>
@@ -199,7 +202,7 @@ if (count($postEvent) == 0 && function_exists('tg_get_all_post')) {
                                     <a href="<?= get_the_permalink($event->ID) ?>">
                                         <div class="post-container post-container-event">
                                             <img class="crop-image-200"
-                                                 src="<?= get_the_post_thumbnail_url($event->ID) ?>"
+                                                 src="<?= get_the_post_thumbnail_url($event->ID, 'medium') ?>"
                                                  onerror="if (this.src != 'error.jpg') this.src = '/wp-content/themes/duhocuoe/images/Flag_of_None.png';"
                                                  alt="<?= $event->post_title ?>">
                                             <h3 class="post-title text-overflow-3-line"><?= $event->post_title ?></h3>
@@ -220,7 +223,8 @@ if (count($postEvent) == 0 && function_exists('tg_get_all_post')) {
     </section>
 
 <?= get_template_part('template-parts/home/members'); ?>
-<?= get_template_part('template-parts/home/counselors'); ?>
+<?//= get_template_part('template-parts/home/counselors'); ?>
+<?= get_template_part('template-parts/home/visa'); ?>
 <?= get_template_part('template-parts/home/our', 'customers'); ?>
 
 <?php

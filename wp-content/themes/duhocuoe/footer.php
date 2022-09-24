@@ -86,7 +86,7 @@ if (!$hideFooter) { ?>
     <section class="address-footer" id="address_footer">
         <div class="container">
             <div class="row">
-                <div class="col-6 address-col">
+                <div class="col-lg-4 col-md-12 col-12 text-md-center text-lg-left address-col">
                     <h3>Trụ sở chính TP. Hồ Chí Minh</h3>
                     <p>15C đường Cao Thắng, phường 2, quận 3, TPHCM</p>
                     <p>Tel: <a href="tel:02838327986">(028) 38.32.79.86</a></p>
@@ -96,7 +96,7 @@ if (!$hideFooter) { ?>
                     </p>
                     <p class="hide-pc">Zalo: <a href="https://zalo.me/0934155606" target="_blank">0934155606</a></p>
                 </div>
-                <div class="col-6 address-col">
+                <div class="col-lg-4 col-md-6 col-12 address-col">
                     <h3>Văn phòng TP. Hồ Chí Minh</h3>
                     <p>Tòa nhà La Bonita, 215 Nguyễn Gia Trí, phường 25, quận Bình Thạnh, TPHCM</p>
                     <p>Hotline: <a href="tel:0911750606">0911 75 0606</a></p>
@@ -104,6 +104,12 @@ if (!$hideFooter) { ?>
                     <p class="hide-mobile">Zalo: <a href="https://chat.zalo.me/?phone=0941579922" target="_blank">0941579922</a>
                     </p>
                     <p class="hide-pc">Zalo: <a href="https://zalo.me/0941579922" target="_blank">0941579922</a></p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 address-col">
+                    <h3>VĂN PHÒNG ĐẠI DIỆN TẠI ĐÀI LOAN</h3>
+                    <p>No.62-1, Shimen Rd, Tucheng Dist., New Taipei City 236, Taiwan Mr. Yen, Kai Cheng (Cris)</p>
+                    <p>Hotline: <a href="tel:+886912885890">+886 912 885 890</a></p>
+                    <p>Email: <a href="mailto:manager@duhocuoe.edu.vn">manager@duhocuoe.edu.vn</a></p>
                 </div>
             </div>
         </div>
