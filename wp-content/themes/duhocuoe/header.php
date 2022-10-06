@@ -68,6 +68,15 @@ if ($pageBlog || $pagePost || $page404 || $pageLogin || $pageProducts || $pagePr
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WN5RJC2');</script>
+    <!-- End Google Tag Manager -->
+
     <?php if (is_singular() && pings_open(get_queried_object())) : ?>
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <?php endif; ?>
@@ -77,6 +86,12 @@ if ($pageBlog || $pagePost || $page404 || $pageLogin || $pageProducts || $pagePr
 </head>
 
 <body <?php body_class(); ?><?php body_style_attribute(); ?> <?php body_data_attributes(); ?>>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN5RJC2"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <?php
 if (version_compare($wp_version, '5.2', '>=')) {
     wp_body_open();
