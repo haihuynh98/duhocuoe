@@ -45,6 +45,7 @@ if ($countryID != 0) {
                             'pagelink' => esc_html__('Page %', 'twentytwentyone'),
                         )
                     );
+
                     ?>
                 </div><!-- .entry-content -->
                 <?php example_cats_related_post() ?>
@@ -52,7 +53,9 @@ if ($countryID != 0) {
             </div>
             <div class="col-lg-3 col-12 sidebar-post">
                 <?php echo get_template_part('template-parts/sidebar/sidebar-schools-majors',null, ['schools'=>$schoolIDs]); ?>
+                <?php echo get_template_part('template-parts/sidebar/sidebar-post-list'); ?>
                 <?php echo get_template_part('template-parts/sidebar/sidebar-post-popular'); ?>
+                <?php echo get_template_part('template-parts/sidebar/sidebar-banner-vertical'); ?>
             </div>
         </div>
     </div>
