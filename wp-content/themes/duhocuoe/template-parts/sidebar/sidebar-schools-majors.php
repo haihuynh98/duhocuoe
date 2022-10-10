@@ -25,7 +25,7 @@ if (isset($args['schools']) && !empty($args['schools'])) {
 
     <div class="tab-content">
         <div id="majors" class="tab-pane fade in active show">
-            <ul>
+            <ul class="scrollbar">
                 <?php foreach ($majorsChildren as $majorsChild) {
                    $termItem = get_term($majorsChild, $taxonomy, ARRAY_A);
                    echo sprintf('<li><a href="%s">%s</a></li>', get_term_link($majorsChild), $termItem['name']);
