@@ -1,10 +1,10 @@
 <?php
-//$postLists = new WP_Query(array('category' => 97));
-$postLists = new WP_Query(array('cat' => 33));
+$postLists = new WP_Query(array('category' => 97));
+//$postLists = new WP_Query(array('cat' => 33));
 
 
 if (($country = $args['country']) != 0) {
-    $postLists = new WP_Query(array('category__and' =>  array( 33, $country)));
+    $postLists = new WP_Query(array('category__and' =>  array( 97, $country)));
 }
 
 //$postLists = new WP_Query( array( 'category__and' => array( 2, 6 ) ) );
