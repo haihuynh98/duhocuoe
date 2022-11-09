@@ -40,6 +40,9 @@ if ($countryID != 0) {
                             <p class="text-center archive-description"><?php echo wp_kses_post(wpautop($description)); ?></p>
                         <?php endif; ?>
                     </div>
+
+                    <returnBody> </returnBody>
+
                     <div class="row articles archive">
                         <?php if (have_posts()) : ?>
                             <?php while (have_posts()) : ?>
