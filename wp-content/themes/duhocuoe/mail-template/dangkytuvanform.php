@@ -24,7 +24,7 @@ function prefix_send_email_to_admin()
 <p>Lời nhắn: <b>' . $message . '</b></p><br>
 <p>Lời nhắn được được gửi từ form đăng ký từ vấn, link: https:' . $preLink . ' </p>';
         $subject = 'Khách hàng đăng ký tư vấn ' . $clientName;
-        $mailTo = 'haihuynh.dev@gmail.com';
+        $mailTo = get_option( 'admin_email' )??'Uoedata@gmail.com';
 
 
         if (boolval(tg_sent_email($mailTo, $bodyContent, $subject)) == true) {

@@ -44,7 +44,12 @@ if (!$hideFooter) { ?>
                             </div>
                             <div class="col-12">
                                 <?php if (!isset($_GET['success'])): ?>
-                                    <input type="submit" class="btn btn-submit submit" name="send-message" value="Gửi">
+                                    <button class="g-recaptcha"
+                                            data-sitekey="6LfaYe8iAAAAAJ1nPyyPs1hPtFb0io2iWjEG30VF"
+                                            data-callback='onSubmit'
+                                            data-action='submit'
+                                            type="submit" class="btn btn-submit submit" name="send-message" value="Gửi">Gửi</button>
+
                                 <?php endif; ?>
                             </div>
                             <div class="col-12">
@@ -128,5 +133,11 @@ if (!$hideFooter) { ?>
 
 <?php wp_footer(); ?>
 <?php back_to_top(); ?>
+
+<script>
+    function onSubmit(token) {
+        document.getElementById("advise_form").submit();
+    }
+</script>
 </body>
 </html>

@@ -23,8 +23,8 @@ class MailConfig
         $this->PHPMailer->isSMTP();                            // Set mailer to use SMTP
         $this->PHPMailer->Host = 'smtp.gmail.com';           // Specify main and backup SMTP servers
         $this->PHPMailer->SMTPAuth = true;                     // Enable SMTP authentication
-        $this->PHPMailer->Username = 'haihuynh.dev@gmail.com';       // SMTP username
-        $this->PHPMailer->Password = 'zmxufniwxbalwmma';         // SMTP password
+        $this->PHPMailer->Username = 'tigergentlemen.info@gmail.com';       // SMTP username
+        $this->PHPMailer->Password = 'jkexpnjhbbymelco';         // SMTP password
         $this->PHPMailer->SMTPSecure = 'ssl';                  // Enable TLS encryption, `ssl` also accepted
         $this->PHPMailer->Port = 465;                          // TCP port to connect to
 
