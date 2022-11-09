@@ -42,7 +42,7 @@ if (!$hideFooter) { ?>
                             <div class="col-12">
                                 <textarea id="message" name="message" rows="4" placeholder="Nội dung"></textarea>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 text-center">
                                 <?php if (!isset($_GET['success'])): ?>
                                     <button class="g-recaptcha"
                                             data-sitekey="6LfaYe8iAAAAAJ1nPyyPs1hPtFb0io2iWjEG30VF"

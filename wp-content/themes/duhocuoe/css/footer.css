@@ -24,7 +24,10 @@ section.footer-form form.advise-form .btn-submit {
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 30px;
-  font-size: 20px;
+  font-size: 16px;
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px 50px;
 }
 
 .sitemap {
